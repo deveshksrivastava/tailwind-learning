@@ -12,7 +12,8 @@
 
 ******************
  - https://www.checklist.design/ - create any desing in the frontend
- - https://dbdiagram.io/         - create ER digram 
+ - https://dbdiagram.io/         - create ER digram
+ - https://tcsglobal.udemy.com/course/tailwindcss-with-examples/learn/lecture/24144888#questions (debug link) 
 
 
  https://youtu.be/ZvzdEH_IAAw?si=HAMSZO4wMT6-3A05
