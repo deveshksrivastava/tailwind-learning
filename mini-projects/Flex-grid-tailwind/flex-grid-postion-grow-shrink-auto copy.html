@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tailwind flex-1 Class</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 class="text-center text-5xl font-bold text-green-600">GeeksforGeeks</h1>
+
+    <p class="text-center font-bold">Tailwind CSS flex-1 Class</p>
+
+    <div id="main" class="ml-32 w-2/3 border-4 border-red-600 bg-green-200">
+      <b class="text-2xl font-bold underline">mx-auto max-w-3xl box-content/box-border</b> <br />
+      <div class="mx-auto box-content max-w-3xl bg-green-500 px-20 text-white">This is px-20 class</div>
+
+      <div class="text-lg font-bold">Tailwind CSS Display:</div>
+      <div class="ul">
+        <li>block : like div, next line, height/width can be changed</li>
+        <li>inline-block : like span, next line, height/width can be changed</li>
+        <li>inline : like span, no next line, height/width cannot be changed</li>
+        <li>flex : like div, next line, height/width can be changed</li>
+        <li>inline-flex - will grow like flex-1, flex-auto</li>
+        <li>grid - will grow like flex-1, flex-auto</li>
+        <li>inline-grid - will grow like flex-1, flex-auto</li>
+        <li>contents - Disappear the container.</li>
+        <li>hidden - Remove the element.</li>
+      </div>
+
+      <div class="mx-16 space-y-4 bg-green-200 p-4">
+        <span class="block h-12 w-32 rounded-lg bg-green-500">1block</span>
+        <span class="inline-block h-12 w-32 rounded-lg bg-green-500">2-inline-block</span>
+        <span class="inline-block h-12 w-32 rounded-lg bg-green-300">3</span>
+        <span class="inline h-12 w-32 rounded-lg bg-green-800">3-inline</span>
+        <div class="flex gap-3">
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">3flex</div>
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">3flex</div>
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">3flex</div>
+        </div>
+
+        <div class="grid grid-cols-2 space-y-3">
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">grid</div>
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">grid</div>
+          <div class="inline-block h-12 w-32 rounded-lg bg-green-500">grid</div>
+        </div>
+
+        <span class="contents h-12 w-32 rounded-lg bg-green-500">3(Disappear container.)</span>
+        <span class="hidden h-12 w-32 rounded-lg bg-green-500">300(hidden)</span>
+      </div>
+
+      <!-- ----------------------------Tailwind CSS Float-------------------------------- -->
+      <div class="text-lg font-bold">Tailwind CSS Float:</div>
+      <div class="ul">
+        <li>float-left</li>
+        <li>float-right</li>
+        <li>float-none</li>
+        <li>clear-both / clear-left / clear-right / clear-none</li>
+      </div>
+
+      <div class="mx-2 w-auto">
+        <img class="float-left p-1" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+        <p class="text-justify">How many times were you frustrated while looking out for a good collection of programming/algorithm/interview questions? What did you expect and what did you get? This portal has been created to provide well written,</p>
+      </div>
+      <div class="float-left h-12 w-32 rounded-lg bg-green-500">3float-left</div>
+      <div class="float-right h-12 w-32 rounded-lg bg-green-500">3float-right</div>
+      <div class="float-none h-12 w-32 rounded-lg bg-green-500">3float-none</div>
+      <br /><br /><br />
+
+      <!-- ----------------------------Tailwind CSS Object Fit-------------------------------- -->
+      <div class="text-lg font-bold">Tailwind CSS Float:</div>
+      <div class="ul">
+        <li>object-contain - preserves the aspect ratio of the original image while fitting within the content box</li>
+        <li>object-cover</li>
+        <li>object-fill</li>
+        <li>object-none</li>
+        <li>object-scale-down</li>
+      </div>
+
+      <div class="h-full w-full bg-green-300">
+        object-contain
+        <img class="h-24 w-full object-contain" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+
+      <div class="h-full w-full bg-green-300">
+        object-cover
+        <img class="h-24 w-full object-cover" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+
+      <div class="h-full w-full bg-green-300">
+        object-fill
+        <img class="h-24 w-full object-fill" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+
+      <div class="h-full w-full bg-green-300">
+        object-none
+        <img class="h-24 w-full object-none" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+
+      <div class="h-full w-full bg-green-300">
+        object-scale-down
+        <img class="h-24 w-full object-scale-down" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+
+      <div class="mx-16 grid grid-flow-col grid-rows-3 justify-between space-y-4 bg-green-300 p-2">
+        <img title="object-left-top" class="my-4 h-24 w-24 border-4 bg-green-200 object-none object-left-top" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-left" class="h-24 w-24 border-4 bg-green-200 object-none object-left" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-left-bottom" class="h-24 w-24 border-4 bg-green-200 object-none object-left-bottom" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-top" class="h-24 w-24 border-4 bg-green-200 object-none object-top" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-center" class="h-24 w-24 border-4 bg-green-200 object-none object-center" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-bottom" class="h-24 w-24 border-4 bg-green-200 object-none object-bottom" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-right-top" class="h-24 w-24 border-4 bg-green-200 object-none object-right-top" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-right" class="h-24 w-24 border-4 bg-green-200 object-none object-right" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+
+        <img title="object-right-bottom" class="h-24 w-24 border-4 bg-green-200 object-none object-right-bottom" src="https://media.geeksforgeeks.org/wp-content/uploads/20190807114330/GFG115.png" />
+      </div>
+      <hr class="border-b-0 bg-gray-800 p-1" />
+      <!-- ----------------------------Tailwind CSS Overflow-------------------------------- -->
+      <p><b>Tailwind CSS Overflow Class</b></p>
+      <!-- https://www.geeksforgeeks.org/tailwind-css-overflow/?ref=next_article -->
+      <!-- https://www.geeksforgeeks.org/tailwind-css-overscroll-behavior/?ref=next_article -->
+
+      <div class="mx-16 h-24 overflow-auto bg-green-200 p-4 text-justify">How many times were you frustrated while looking out for a good collection of programming/algorithm/interview questions? What did you expect and what did you get? This portal has been created to provide well written, well thought and well explained solutions for selected questions. An IIT Roorkee alumnus and founder of GeeksforGeeks. He loves to solve programming problems in most efficient ways. Apart from GeeksforGeeks, he has worked with DE Shaw and Co. as a software developer and JIIT Noida as an assistant professor. It is a good platform to learn programming. It is an educational website. Prepare for the Recruitment drive of product based companies like Microsoft, Amazon, Adobe etc with a free online placement preparation course</div>
+      ##
+
+      <!-- ----------------------------Tailwind CSS Position-------------------------------- -->
+      <!-- https://www.geeksforgeeks.org/tailwind-css-position/?ref=next_article -->
+      <div class="text-lg font-bold">Tailwind CSS Position:</div>
+      <div class="ul">
+        <li>static</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+      </div>
+
+      <!-- <div class="static text-left p-2 m-2 bg-blue-200 h-24">         
+        <p class="font-bold">Static parent</p> 
+        <div class="absolute bottom-0 left-0 p-2 bg-red-500"> 
+        <p>Absolute child</p> 
+       </div>  -->
+
+      <br />
+      <br />
+      <hr class="border-b-0 bg-gray-800 p-1" />
+      <!-- ----------------------------Tailwind CSS .inset-0/Top/Right/Bottom/Left----------------------- -->
+      <!-- https://www.geeksforgeeks.org/tailwind-css-top-right-bottom-left/?ref=next_article -->
+      <div class="text-lg font-bold">Tailwind CSS .inset-0/Top/Right/Bottom/Left:</div>
+      <div class="ul">
+        <li>.inset-0 : It is used to provide 0px value to top/right/bottom/left properties of element.</li>
+        <li>.inset-y-0/.inset-x-0</li>
+        <li>.top-0</li>
+        <li>.right-0</li>
+        <li>.bottom-0</li>
+        <li>.left-0</li>
+      </div>
+      <div class="relative m-4 h-24 w-24 bg-green-400">
+        <div class="absolute inset-7 bg-green-800"></div>
+      </div>
+
+      <div class="relative m-4 h-24 w-24 bg-green-400">
+        <div class="absolute inset-0 bg-red-800"></div>
+      </div>
+
+      <div class="relative m-4 h-36 w-36 bg-green-400">
+        <div class="absolute left-0 top-0 h-16 w-16 bg-green-800"></div>
+      </div>
+
+      <div class="relative m-4 h-36 w-36 bg-green-400">
+        <div class="absolute bottom-0 h-16 w-16 bg-green-800"></div>
+      </div>
+
+      <!-- ----------------------------Tailwind CSS Visibility----------------------- -->
+      <!-- https://www.geeksforgeeks.org/tailwind-css-visibility/?ref=next_article -->
+      <div class="text-lg font-bold">Tailwind CSS Visibility:</div>
+      <div class="ul">
+        <li>Invisible</li>
+        <li>Visible</li>
+      </div>
+
+      <b>Tailwind CSS Visibility Class</b>
+      <div id="main" class="flex flex-row justify-evenly">
+        <div class="h-12 w-24 bg-green-700">1</div>
+        <div class="invisible h-12 w-24 bg-green-600">2-invisible</div>
+        <div class="visible h-12 w-24 bg-green-500">3 visible</div>
+        <div class="h-12 w-24 bg-green-400">4</div>
+      </div>
+      <br><br>
+      <hr class="border-b-0 bg-gray-800 p-1" />
+      <!-- ----------------------------Tailwind CSS Z-index----------------------- -->
+      <!-- https://www.geeksforgeeks.org/tailwind-css-z-index/?ref=next_article-->
+      <div class="text-lg font-bold">Tailwind CSS Z-index:</div>
+      <div class="ul">
+        <li>z-0</li>
+        <li>z-10 /z-20/z-50/z-auto</li>
+      </div>
+
+      <b>Tailwind CSS Z-Index Class</b>
+      <div class="flex-column">
+        <div class="relative z-0 h-12 w-full bg-green-400" style="top: 32px;">0</div>
+        <div class="relative z-10 h-12 w-full bg-yellow-400">1</div>
+        <div class="relative z-20 h-12 w-full bg-red-400">2</div>
+        <div class="relative z-30 h-12 w-full bg-blue-400">3</div>
+        <div class="relative z-40 h-12 w-full bg-green-300">4</div>
+        <div class="relative z-50 h-12 w-full bg-orange-400">5</div>
+      </div>
+      <br /><br />
+      <hr class="border-b-0 bg-gray-800 p-1" />
+      <!-- ----------------------------Tailwind CSS Flex-------------------------------- -->
+
+      <h2 class="text-lg font-bold">flex flex-row justify-between gap-2 flex-wrap</h2>
+      <div id="main" class="flex flex-row flex-wrap justify-between gap-2">
+        <div class="h-12 w-24 bg-green-900">1</div>
+        <div class="h-12 w-24 bg-green-800">2</div>
+        <div class="h-12 w-24 bg-green-700">3</div>
+        <div class="h-12 w-24 bg-green-600">4</div>
+        <div class="h-12 w-24 bg-green-500">5</div>
+        <div class="h-12 w-24 bg-green-400">6</div>
+      </div>
+
+      <div class="text-lg font-bold">Tailwind CSS Flex:</div>
+      <div class="ul">
+        <li>flex-1</li>
+        <li>flex-initial</li>
+        <li>flex-auto</li>
+        <li>flex-none</li>
+      </div>
+
+      <p class="ml-2 text-lg font-bold">This is the effect of flex-1:</p>
+      <p class="ml-2">-> item take extra space with growing</p>
+      <div class="m-2 flex text-white">
+        <div class="flex-1 bg-red-900">Geeksforgeeks</div>
+        <div class="flex-1 bg-blue-800">Tailwind CSS</div>
+        <div class="flex-1 bg-green-800">Tailwind CSS</div>
+      </div>
+
+      <p class="ml-2 text-lg font-bold">This is the effect of flex-initial:</p>
+      <p class="ml-2">allow a flex item to shrink but not grow</p>
+      <div class="m-2 flex text-white">
+        <div class="flex-initial bg-green-900">Geeksforgeeks</div>
+        <div class="flex-initial bg-green-800">A Computer Science for Geeks</div>
+      </div>
+      <p class="ml-2 text-lg font-bold">This is the effect of flex-auto:</p>
+      <p class="ml-2">-> allow a flex item to shrink but not growshrink. Its flexible</p>
+      <div class="m-2 flex text-white">
+        <div class="flex-auto bg-green-900">CSS</div>
+        <div class="flex-auto bg-green-800">Cascading Style Sheet</div>
+      </div>
+      <p class="ml-2 text-lg font-bold">This is the effect of flex-none:</p>
+      <p class="ml-2">->don't allow a flex item to shrink or grow</p>
+
+      <div class="m-2 flex text-white">
+        <div class="flex-none bg-green-900">HTML</div>
+        <div class="flex-none bg-green-800">Hypertext Markup Language</div>
+      </div>
+
+      <br />
+      <div class="text-lg font-bold">Flex Grow:</div>
+      <div class="ul">
+        <li>flex-grow-0 - will not grow</li>
+        <li>flex-grow - will grow like flex-1, flex-auto</li>
+      </div>
+
+      <p class="ml-2">This is the effect of Flex Grow:</p>
+      <p class="ml-2">->don't allow a flex item to shrink or grow</p>
+      <div class="m-2 flex text-white">
+        <div class="flex-none flex-grow-0 bg-green-900">HTML</div>
+        <div class="flex-none flex-grow bg-red-800">Hypertext Markup Language</div>
+      </div>
+
+      <br />
+      <div class="text-lg font-bold">Flex Shrink:</div>
+      <div class="ul">
+        <li>flex-Shrink-0 - restricts the shrinking feature (round ball, image usecase)</li>
+        <li>flex-shrink - allow to shrink</li>
+      </div>
+      <div id="main" class="ml-12 mr-12 flex justify-evenly space-x-2">
+        <div class="h-12 flex-1 rounded bg-green-600">Side Part</div>
+        <div class="h-12 flex-shrink-0 rounded bg-green-300">Flex-Shrink-0</div>
+        <div class="mr-12 h-12 flex-1 rounded bg-green-600">Side Part</div>
+      </div>
+
+      <br />
+      <div class="text-lg font-bold">Order:</div>
+      <div class="ul">
+        <li>order-1</li>
+        <li>order-12</li>
+        <li>order-first</li>
+        <li>order-last</li>
+        <li>order-none</li>
+      </div>
+      <div id="main" class="ml-12 mr-12 flex justify-evenly space-x-2">
+        <div class="bg-green-600">Side Part 1</div>
+        <div class="order-2 bg-green-300">Flex-Shrink-2</div>
+        <div class="order-1 flex bg-green-600">Side Part 3</div>
+        <div class="order-first flex bg-green-600">Side Part 3</div>
+        <div class="order-none flex bg-green-600">Side Part 3</div>
+      </div>
+
+      <hr class="border-b-0 bg-gray-800 p-1" />
+
+      <!-- ----------------------------GRID-------------------------------------------------------- -->
+      <b class="text-2xl font-bold underline">Tailwind CSS Grid</b> <br />
+      <b class="text-lg font-bold">Tailwind CSS grid-cols Class</b>
+      <div class="ul">
+        <li>Grid</li>
+        <li>grid-cols-3/grid-rows-3 + grid-flow-col</li>
+        <li>justify-evenly</li>
+        <li>gap-1, gap-x-12, gap-y-1.2</li>
+        <li>col-span-2(child)</li>
+        <li>row-span-2 h-full(child)</li>
+        <li>col-start-2 col-end-4</li>
+      </div>
+      <br />
+
+      <b class="text-base font-bold">--->grid-rows-2 - grid-flow-col - help to make the alignment of cards, without which row willl not work</b>
+
+      <div id="main" class="grid grid-flow-col grid-rows-2">
+        <div class="m-4 h-12 rounded-lg bg-green-500">1</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">2</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">3</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">4</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">5</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">6</div>
+      </div>
+
+      <b class="text-base font-bold">---> grid-cols-2</b>
+      <div id="main" class="grid grid-cols-2">
+        <div class="m-4 h-12 rounded-lg bg-green-500">1</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">2</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">3</div>
+        <div class="m-4 h-12 rounded-lg bg-green-500">4</div>
+      </div>
+      <br /><br />
+
+      <b class="text-base font-bold">--->grid grid-cols-3 justify-evenly gap-1 + col-span-2 & col-start-2 col-end-4</b>
+      <div id="main" class="grid grid-cols-3 justify-evenly gap-1">
+        <div class="w-26 h-12 bg-green-700">1</div>
+        <div class="w-26 h-12 bg-green-500">2</div>
+        <div class="w-26 col h-12 bg-green-300">3</div>
+        <div class="w-26 col-span-2 h-12 bg-green-700">4a (col-span-2)</div>
+        <div class="w-26 h-12 bg-green-500">5</div>
+        <div class="w-26 row-span-2 h-full bg-green-300">6(row-span-2)</div>
+        <div class="w-26 h-12 bg-green-700">1</div>
+        <div class="w-26 h-12 bg-green-500">2</div>
+        <div class="col-start-2 col-end-4 h-12 rounded-lg bg-green-500">4p(col-start-2 col-end-4)</div>
+        <div class="w-26 h-12 bg-green-700">4</div>
+        <div class="w-26 h-12 bg-green-500">5</div>
+        <div class="w-26 h-12 bg-green-300">6</div>
+      </div>
+
+      <br /><br />
+      <b>Tailwind CSS Grid Auto Columns Class?????????????</b>
+      <div class="m-8 grid auto-cols-auto grid-flow-col grid-rows-2 gap-4 bg-green-600 p-8">
+        <div class="bg-green-200 p-4">HyperText Markup language</div>
+        <div class="bg-green-200 p-4">Cascading Style Sheet</div>
+        <div class="bg-green-200 p-4">LiveScript Become JavaScript</div>
+        <div class="bg-green-200 p-4">Bootstrap become replacement of CSS</div>
+        <div class="bg-green-200 p-4">LiveScript Become JavaScript</div>
+        <div class="bg-green-200 p-4">Bootstrap become replacement of CSS</div>
+        <div class="bg-green-200 p-4">LiveScript Become JavaScript</div>
+        <div class="bg-green-200 p-4">Bootstrap become replacement of CSS</div>
+      </div>
+
+      <b>Tailwind CSS Grid Auto Columns Class?????????????</b>
+      <!-- https://www.geeksforgeeks.org/tailwind-css-grid-auto-columns/?ref=next_article -->
+      <div class="m-8 grid auto-cols-min grid-flow-col grid-rows-2 gap-4 bg-green-600 p-8">
+        <div class="bg-green-200 p-4">HyperText Markup language</div>
+        <div class="bg-green-200 p-4">Cascading Style Sheet</div>
+        <div class="bg-green-200 p-4">LiveScript Become JavaScript</div>
+        <div class="bg-green-200 p-4">Bootstrap become replacement of CSS</div>
+      </div>
+    </div>
+  </body>
+</html>
