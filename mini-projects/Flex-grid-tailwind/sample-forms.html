@@ -1,0 +1,225 @@
+<!-- import React, { useState } from 'react';
+
+const SampleForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    age: '',
+    gender: '',
+    comments: '',
+    agreeTerms: false,
+  });
+
+  const handleChange = (event) => {
+    const { name, value, type, checked } = event.target;
+    const fieldValue = type === 'checkbox' ? checked : value;
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: fieldValue,
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Perform form submission logic here
+    console.log(formData);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          value={formData.age}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="gender">Gender:</label>
+        <select id="gender" name="gender" value={formData.gender} onChange={handleChange}>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label htmlFor="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          value={formData.comments}
+          onChange={handleChange}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="agreeTerms">
+          <input
+            type="checkbox"
+            id="agreeTerms"
+            name="agreeTerms"
+            checked={formData.agreeTerms}
+            onChange={handleChange}
+          />
+          Agree to Terms and Conditions
+        </label>
+      </div>
+
+      <div>
+        <label>Favorite Color:</label>
+        <div>
+          <label htmlFor="colorRed">
+            <input
+              type="radio"
+              id="colorRed"
+              name="favoriteColor"
+              value="red"
+              checked={formData.favoriteColor === 'red'}
+              onChange={handleChange}
+            />
+            Red
+          </label>
+        </div>
+        <div>
+          <label htmlFor="colorBlue">
+            <input
+              type="radio"
+              id="colorBlue"
+              name="favoriteColor"
+              value="blue"
+              checked={formData.favoriteColor === 'blue'}
+              onChange={handleChange}
+            />
+            Blue
+          </label>
+        </div>
+        <div>
+          <label htmlFor="colorGreen">
+            <input
+              type="radio"
+              id="colorGreen"
+              name="favoriteColor"
+              value="green"
+              checked={formData.favoriteColor === 'green'}
+              onChange={handleChange}
+            />
+            Green
+          </label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default SampleForm; -->
+
+<form>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+    </div>
+  
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+    </div>
+  
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+    </div>
+  
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" />
+    </div>
+  
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+    </div>
+  
+    <div>
+      <label>
+        <input type="checkbox" name="agreeTerms" />
+        Agree to Terms and Conditions
+      </label>
+    </div>
+  
+    <div>
+      <label>Favorite Color:</label>
+      <div>
+        <label for="colorRed">
+          <input type="radio" id="colorRed" name="favoriteColor" value="red" />
+          Red
+        </label>
+      </div>
+      <div>
+        <label for="colorBlue">
+          <input type="radio" id="colorBlue" name="favoriteColor" value="blue" />
+          Blue
+        </label>
+      </div>
+      <div>
+        <label for="colorGreen">
+          <input type="radio" id="colorGreen" name="favoriteColor" value="green" />
+          Green
+        </label>
+      </div>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pricing Cards</title>
+  </head>
+  <body>
+    <div class="mx-auto max-w-3xl">
+      <div class="grid grid-cols-2 p-3 pt-12">
+        <div class="right bg-violet-100 p-8">
+          <div class="facebook">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" class="w-32" />
+          </div>
+          <div class="reacentlogin px-3 text-4xl font-semibold text-black">Recent logins</div>
+          <div class="p lorem px-3">Click your picture or add an account.</div>
+          <div class="flex justify-around gap-4 p-4">
+            <!-- left sidebar profile -->
+            <div class="card w-full border-2 shadow-2xl">
+              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" />
+              </svg>
+              <div class="relative -right-2 -top-6 float-right h-5 w-5 rounded-full bg-red-800 text-white">11</div>
+              <div>
+                <svg class="h-20 w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                </svg>
+              </div>
+    
+              <h3 class="text-center">Parth</h3>
+            </div>
+    
+            <!-- right sidebar Login -->
+            <section class="card w-full border-2 shadow-2xl">
+              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" />
+              </svg>
+              <div class="relative -right-2 -top-6 float-right h-5 w-5 rounded-full bg-red-800 text-white">11</div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <h3 class="text-center">Add Account</h3>
+            </section>
+    
+            <div class="card"></div>
+          </div>
+        </div>
+        <div>
+          <div class="left">
+            <div class="flex flex-col gap-4 p-4 shadow-2xl">
+              <input class="border-2" type="text" name="" id="" placeholder="Email address or Phone number" />
+              <input class="border-2" type="text" name="" id="" placeholder="Password" />
+              <button type="submit" class="h-12 rounded-lg bg-blue-600 font-bold text-white">Log in</button>
+              <a href="http://" class="text-center font-normal text-blue-600">Forgetten Password?</a>
+              <hr class="bg-gray-400" />
+              <button type="submit" class="h-12 rounded-lg bg-[#42b72a] font-bold text-white">Create new account</button>
+            </div>
+          </div>
+          <div>Create a Page for a celebrity, brand or business.</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- sample  -->
+    <!-- https://www.facebook.com/?stype=lo&deoia=1&jlou=AffZ_XfsNMhbyuUXGxoDvqlfM_r0ltK8eI6XAGl5OS3QAlqLsnSy3CHOwQuUhEN_W_u14Fj4AEg_OPfVFaCf-WnGRWPQzYxDTmcdW87fdFuAeg&smuh=2685&lh=Ac9sP5PdLTKZWmPScq8 -->
+    
+    <!-- icons -->
+    <!-- https://fontawesome.com/v5/search?q=person&o=r -->
+    
+  </body>
+</html>

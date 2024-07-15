@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.0/tailwind.min.css"
+        integrity="sha512-ksC7McuoU4VJ07WGtca5INyDRXzGsmhyEEJYzoWBkjC/KwuG+IK/pFnxJFNIGmOd8pmGexOxd3FziCPZXQJ4lA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> this required the css-->
+
+<body>
+
+    <div class="h-screen mx-auto bg-gradient-to-b from-gray-50 to-gray-200">
+        <!-- Navbar -->
+        <div class="w-screen grid grid-cols-3 h-20 border-b-[1px] items-center fixed top-0 bg-white p-2">
+            <div class="div">
+                <img src="static/airbnb-logo.png" class="w-28 h-16">
+            </div>
+            <div class="flex gap-5 justify-evenly bg-rewd-800 shadow-md border-2 rounded-2xl h-12 items-center">
+                <div class="border-r-2 text-sm font-medium  px-4">Anyware</div>
+                <div class="border-r-2 text-sm font-medium px-4">Any week</div>
+                <div class="text-sm font-medium text-gray-500">Any guest</div>
+                <span class="material-symbols-outlined bg-red-500 rounded-full text-white p-1">
+                    search
+                </span>
+            </div>
+            <div class="flex justify-end items-center gap-8">
+                <div>Airbnb your home</div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        language
+                    </span>
+                </div>
+                <div class="flex gap-2 p-2 border rounded-md w-20 justify-evenly items-center">
+                    <div class="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="bg-black text-white rounded-full text-center w-6 h-6">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category bar -->
+        <div class="h-24 w-screen flex items-center space-x-5 fixed top-20 bg-white justify-around">
+            <div class="flex gap-10 ">
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type1.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Amazing pools</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type2.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Play</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type3.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Historical Homes</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type4.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Countryside</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type5.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Surfing</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type6.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Farms</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type7.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Amazing views</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type8.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Rooms</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type9.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Lakefront</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type10.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Beachfront</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type11.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">OMG!</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type12.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Golfing</p>
+                </div>
+                <div class="category pl-15 flex text-gray-400 hover:text-black gap-2 items-center flex-col">
+                    <img src="static/type12.jpeg" class="hotal-img h-14" />
+                    <p class="category-text">Golfing</p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined pl-4">arrow_circle_right</span>
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">sync_alt</span>
+                <p class="text-xs font-medium pr-2">Filters</p>
+            </div>
+        </div>
+
+        <!-- Price bar -->
+        <div class="flex justify-center pt-48 ">
+            <div class="flex items-center justify-around border-2 w-[600px] rounded-md  bg-white pr-4">
+                <div class="display flex p-4 gap-4">
+                    <div class="font-bold">Display total price</div>
+                    <div class="text-gray-700s">|</div>
+                    <div class="text-gray-700">Includes all fees, before taxes</div>
+                </div>
+                <span class="material-symbols-outlined">
+                    toggle_on
+                </span>
+            </div>
+        </div>
+
+
+
+        <!-- Hotels -->
+        <div class="grid grid-cols-4 gap-10 pl-14 pt-4">
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img2.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>*</div>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img3.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-star pl-4 pt-1"></i>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img4.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>*</div>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>*</div>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <i class="fa-solid fa-star pl-4 pt-1"></i>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>*</div>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="w-72 h-72 border-2 rounded-lg shadow-2xl">
+                <img src="static/img1.jpg" class="rounded-xl ">
+                <div class="flex justify-around ">
+                    <div>
+                        <title></title>
+                        <div class="font-bold text-gray-700">63 kilometers away</div>
+                        <div class="28kim text-gray-500">22-27 Jul</div>
+                        <div class="28kim"><span class="font-bold">₹11,000</span> <span
+                                class="text-gray-500">night</span> </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div>*</div>
+                        <div>New</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="w-screen flex justify-around fixed bottom-0 bg-white shadow-teal-500">
+            <div class="flex gap-4 pr-80 space-x-1">
+                <div class="">© 2023 Airbnb, Inc.</div>
+                <div>.</div>
+                <div>Privacy</div>
+                <div>.</div>
+                <div>Terms</div>
+                <div>.</div>
+                <div>Sitemap</div>
+                <div>.</div>
+                <div>Company details</div>
+            </div>
+            <div class="flex  gap-2 justify-end space-x-4">
+                <span class="material-symbols-outlined">language</span>
+                <div>English(IN)</div>
+                <div>₹ INR</div>
+                <div>Support & resources</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<!-- 
+    border-b-[1px] 
+    py-1.25 pr-1.25 pl-3
+
+    
+    
+    -->
