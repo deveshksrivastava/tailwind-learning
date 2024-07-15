@@ -1,48 +1,63 @@
 
 https://www.rightmove.co.uk/
-<div class="min-h-screen bg-white">
-  <div class="mx-auto w-3/4">
-    <header class="flex justify-around bg-orange-300">
-      <div class="logo rounded-lg bg-green-700 p-1 text-white">RightMove</div>
-      <ul class="justify-aroun flex gap-6">
-        <li>Buy</li>
-        <li>Rent</li>
-        <li>Commertial</li>
-      </ul>
-      <div class="signin rounded-lg bg-red-700 p-1 text-white">My SignIn</div>
-    </header>
-    <div class="banner flex h-[300px] flex-col items-center justify-center bg-slate-200">
-      <h1 class="text-4xl text-white"><span class="font-bold text-green-300">believe</span> in finding it</h1>
-      <h2 class="text-2xl text-black">with the UK’s largest choice of homes</h2>
-      <div class="card h-[100px] w-3/4 rounded-lg bg-blue-900 p-2">
-        <h1 class="text-white">Search properties for sale and to rent</h1>
-        <div>
-          <input type="text" name="" id="" class="w-3/4" />
-          <button disabled="disabled" class="rounded-lg bg-green-600 p-1">For Sale</button>
-          <button disabled="disabled" class="rounded-lg bg-green-600 p-1">To Rent</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <div class="mx-auto w-3/4">
+        <header class="flex justify-around bg-orange-300">
+          <div class="logo rounded-lg bg-green-700 p-1 text-white">RightMove</div>
+          <ul class="justify-aroun flex gap-6">
+            <li>Buy</li>
+            <li>Rent</li>
+            <li>Commertial</li>
+          </ul>
+          <div class="signin rounded-lg bg-red-700 p-1 text-white">My SignIn</div>
+        </header>
+        <div class="banner flex h-[300px] flex-col items-center justify-center bg-slate-200">
+          <h1 class="text-4xl text-white"><span class="font-bold text-green-300">believe</span> in finding it</h1>
+          <h2 class="text-2xl text-black">with the UK’s largest choice of homes</h2>
+          <div class="card h-[100px] w-3/4 rounded-lg bg-blue-900 p-2">
+            <h1 class="text-white">Search properties for sale and to rent</h1>
+            <div>
+              <input type="text" name="" id="" class="w-3/4" />
+              <button disabled="disabled" class="rounded-lg bg-green-600 p-1">For Sale</button>
+              <button disabled="disabled" class="rounded-lg bg-green-600 p-1">To Rent</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="grid grid-cols-2 gap-2 p-10">
+          <div class="saveproperty rounded-xl border-b p-2 shadow-2xl">
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="logo">@</div>
+                <div class="svprop">Saved properties</div>
+              </div>
+              <div class="text-green-300">View All</div>
+            </div>
+            <div class="ju ju flex w-full justify-around gap-6">
+              <div class="card1 w-1/2 bg-slate-400">Card1</div>
+              <div class="card2 w-1/2 bg-slate-400">Card2</div>
+            </div>
+          </div>
+          <div class="recentsearch w-full rounded-xl border-b p-2 shadow-2xl">
+            <h1>Recent searches</h1>
+            <div class="card1">Card1</div>
+            <div class="card2">Card2</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-2 p-10">
-      <div class="saveproperty rounded-xl border-b p-2 shadow-2xl">
-        <div class="flex justify-between">
-          <div class="flex">
-            <div class="logo">@</div>
-            <div class="svprop">Saved properties</div>
-          </div>
-          <div class="text-green-300">View All</div>
-        </div>
-        <div class="ju ju flex w-full justify-around gap-6">
-          <div class="card1 w-1/2 bg-slate-400">Card1</div>
-          <div class="card2 w-1/2 bg-slate-400">Card2</div>
-        </div>
-      </div>
-      <div class="recentsearch w-full rounded-xl border-b p-2 shadow-2xl">
-        <h1>Recent searches</h1>
-        <div class="card1">Card1</div>
-        <div class="card2">Card2</div>
-      </div>
-    </div>
-  </div>
-</div>
+
+  </body>
+</html> 
+
