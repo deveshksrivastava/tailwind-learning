@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Product Modal</title>
-  </head>
-  <body>
 
     <h1>tailwind css	</h1>
 	
@@ -42,7 +32,7 @@ text
 	Other Text Properties:	opacity (opacity-50), text overflow (truncate), and text decoration style (decoration-dashed).
 	hover	"Background color (bg-*): hover:bg-red-200
 Text color (text-*): hover:text-green-500
-Opacity (opacity-*): hover:opacity-75 (75% opacity on hover)
+Opacity (opacity-*): bg-red-400/40,  hover:opacity-75 (75% opacity on hover)
 Border (border-*): hover:border-dashed (dashed border on hover)
 Shadow (shadow-*): hover:shadow-md (medium shadow on hover)"
 		"<h1 class=""text-3xl font-bold text-center mb-4"">This is a heading</h1>
@@ -57,6 +47,7 @@ Shadow (shadow-*): hover:shadow-md (medium shadow on hover)"
 	truncate	truncate max-w-40 overflow-ellipsis">This text will be truncated with ellipsis (...)
 	leading-tight	leading-tight">This text has tighter line spacing
 	tracking-wider	tracking-wide">This text has wider letter spacing
+	
 		
 hide & show		
 	block level	
@@ -252,15 +243,20 @@ CSS                                              			           Tailwind CSS
 
 flex						 			                                      flex     				-keep in same 1 line, also with [flex-row]
 flex-direction: row/column			                            flex-row/flex-col                   - sameline[flex-row], virticle[flex-cols]
-flex-wrap: wrap					 			                              wrap
+flex-wrap: wrap					 			    wrap
 justify-content:flex-start|flex-end|center
-    |space-between|space-around(horizonatl)                 justify-start   /end/center/between/around/evenly     [Center : justify-center & items-center]
-align-items; flex-start/end/center/stretch(vertical)			  items-start     /end/center/baseline(vimp)/stretch(default) (height reqired)
-align-contect: center/flex-start/end					              content-center  /start/end/between/around/evenly {only works when flex-wrap}
-                                                                                                 (height and also space between the element)
-										                                        place-content-around (making center)i.e. the align-content and justify-content properties
+    |space-between|space-around(horizonatl)                 			justify-start   /end/center/between/around/evenly     [Center : justify-center & items-center]
+align-items; flex-start/end/center/stretch(vertical)			  items-start  (+flex)   /end/center/baseline(vimp)/stretch(default) (height reqired)
+align-contect: center/flex-start/end					              content-center (no flex+ worked in child also when height given)  
+                                                                      /start/end/between/around/evenly {only works when flex-wrap}
+                                                                      (height and also space between the element)
+										                                        
 CHILD --->>>
-align-self:auto/ flex-start/end/center/stretch					    self-auto/start/end/center/stretch
+align-self:auto/ flex-start/end/center/stretch					    self-auto/start/end/center/stretch - this only work on the main child div (EXAMPLE 1000)
+                                                            content-center - work on the content under the above div (EXAMPLE 1000)
+                                                             end of the child in child, work in chil and parent when height given
+                                                            place-content-around (making center)i.e. the align-content and justify-content properties
+
 											https://play.tailwindcss.com/GH2OQhJ6Nz
 											https://play.tailwindcss.com/52BbQGhs0K
 
@@ -285,6 +281,27 @@ EX:
   <div class="flex-auto w-1/3 bg-gray-200">Item with flex-basis</div>
   <div class="flex-auto w-1/3 bg-gray-200">Item with flex-basis</div>
   <!-- Other flex items -->
+</div>
+
+EXAMPLE 1000
+
+<div class="m-2 flex h-96 flex-row flex-wrap items-center gap-3 bg-red-100 border border-red-600">
+  <!-- <div class=" h-96 con bg-red-400">
+    <p class="m-8 border bg-green-400 p-4 ">items 21</p>
+  </div> -->
+  <div class="h-48 content-end bg-red-400">items 2</div>
+  <div class="h-60 self-center content-start bg-blue-400">
+    <div>THIS ID DEIV</div>
+  </div>
+</div>
+>>>Making center
+[&>*]:py-4  - making padding top and bottom 10rem
+[&>*]:text-center - making the text center
+
+<div class="flex flex-row [&>*]:py-4 [&>*]:text-center">
+  <div class="basis-1/3 bg-sky-500">A</div>
+  <div class="basis-1/3 bg-purple-500">B</div>
+  <div class="basis-1/3 bg-sky-500">C</div>
 </div>
 
 
@@ -354,6 +371,7 @@ https://www.geeksforgeeks.org/tailwind-css-grid-template-columns/?ref=lbp
 
 
 
+
 --------------------------------Responsive-----------------------------------------
 making like button
 <div>
@@ -420,6 +438,20 @@ run it :
       <a href="#" class="mt-1 block text-lg font-medium leading-5 text-black hover:underline">Incredible accommodation for your team</a>
       <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
     </div>
+  </div>
+</div>
+
+<div class="mx-auto max-w-6xl">
+  <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-9 gap-3">
+    <div class="border bg-red-400 col-span-3">1</div>
+    <div class="border bg-red-400">2</div>
+    <div class="border bg-red-400">3</div>
+    <div class="border bg-red-400 row-span-8">4</div>
+    <div class="border bg-red-400">5</div>
+    <div class="border bg-red-400">6</div>
+    <div class="border bg-red-400">7</div>
+    <div class="border bg-red-400 col-span-3">8</div>
+    <div class="border bg-red-400 col-span-3">9</div>
   </div>
 </div>
 
@@ -610,6 +642,21 @@ const data = [
                     ))
                 }
 
+
+                12 columns grid
+                <div class="mx-auto max-w-6xl">
+                  <div class="grid grid-cols-12 gap-3">
+                    <div class="border bg-red-400 col-span-12">1</div>
+                    <div class="border bg-red-400 row-span-5">2</div>
+                    <div class="border bg-red-400 col-span-10">3</div>
+                    <div class="border bg-red-400  row-span-5">4</div>
+                    <div class="border bg-red-400  col-span-10">5</div>
+                    <div class="border bg-red-400  col-span-10">1</div>
+                    <div class="border bg-red-400  col-span-10">1</div>
+                    <div class="border bg-red-400  col-span-10">1</div>
+                    <div class="border bg-red-400 col-span-12">9</div>
+                  </div>
+                </div>
 ---------------------------------------------------------------------
 <div class="flex-rows h-62 flex w-20">
   <!-- <h3>Use of Inline Block to make in collumn</h3> -->
@@ -648,14 +695,14 @@ How to do this?
 	Docs   Components   Blog    Showcas   Theme
 solution
 	
-              <nav class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
-                <ul class="flex space-x-8">
-                  <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/docs/installation">Docs</a></li>
-                  <li><a href="https://tailwindui.com/?ref=top" class="hover:text-sky-500 dark:hover:text-sky-400">Components</a></li>
-                  <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/blog">Blog</a></li>
-                  <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/showcase">Showcase</a></li>
-                </ul>
-              </nav>
+<nav class="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+  <ul class="flex space-x-8">
+    <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/docs/installation">Docs</a></li>
+    <li><a href="https://tailwindui.com/?ref=top" class="hover:text-sky-500 dark:hover:text-sky-400">Components</a></li>
+    <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/blog">Blog</a></li>
+    <li><a class="hover:text-sky-500 dark:hover:text-sky-400" href="/showcase">Showcase</a></li>
+  </ul>
+</nav>
 
 how to make center/flex/grid/col-span, mx-auto
 <div class="mx-auto max-w-6xl">
@@ -753,6 +800,3 @@ Main Website With Project Demos - https://tailwindfromscratch.com
 Code For Sandbox - https://github.com/bradtraversy/tailwind-sandbox
 Code For All Projects - https://github.com/bradtraversy/tailwind-course-projects
 Code For Simple Tailwind Starter - https://github.com/bradtraversy/simple-tailwind-starter
-
-</body>
-</html>

@@ -7,10 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>https://tailblocks.cc/</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              sans: ['Mulish', 'sans-serif'],
+              mono: ['Rokkitt', 'monospace'],
+            },
+          },
+          plugins: [
+                require('@tailwindcss/forms'),
+            ],
+        }
+      </script>
 </head>
 
 <body>
-    <div class="mx-auto max-w-4xl">
+    <div class="mx-auto max-w-4xl bg-gray-50">
         <div class="grid grid-cols-1">
             <div class="">
                 <!-- BLOG -->
@@ -2756,635 +2769,1138 @@
     </div>
 
   <!-- CONTACT Form -->
-  <h1 class="text-4xl text-red-700">FORM SAMPLE</h1>
-  <div class="grid grid-cols-2 gap-2">
-      <form class="w-full max-w-lg  border-b-8 pt-8 ju">
-          <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-first-name">
-                      First Name
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name" type="text" placeholder="Jane">
-                  <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-              </div>
-              <div class="w-full md:w-1/2 px-3">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-last-name">
-                      Last Name
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-last-name" type="text" placeholder="Doe">
-              </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-password">
-                      Password
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-password" type="password" placeholder="******************">
-                  <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-              </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-2">
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-city">
-                      City
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-city" type="text" placeholder="Albuquerque">
-              </div>
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-state">
-                      State
-                  </label>
-                  <div class="relative">
-                      <select
-                          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                          id="grid-state">
-                          <option>New Mexico</option>
-                          <option>Missouri</option>
-                          <option>Texas</option>
-                      </select>
-                      <div
-                          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20">
-                              <path
-                                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                          </svg>
-                      </div>
-                  </div>
-              </div>
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-zip">
-                      Zip
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-zip" type="text" placeholder="90210">
-              </div>
-          </div>
-      </form>
-
-      <!-- form 2     -->
-
-      <div class="">
-          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-              <div class="mb-4">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                      Username
-                  </label>
-                  <input
-                      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="username" type="text" placeholder="Username">
-              </div>
-              <div class="mb-6">
-                  <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                      Password
-                  </label>
-                  <input
-                      class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                      id="password" type="password" placeholder="******************">
-                  <p class="text-red-500 text-xs italic">Please choose a password.</p>
-              </div>
-              <div class="flex items-center justify-between">
-                  <button
-                      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                      type="button">
-                      Sign In
-                  </button>
-                  <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
-                      href="#">
-                      Forgot Password?
-                  </a>
-              </div>
-          </form>
-          <p class="text-center text-gray-500 text-xs">
-              &copy;2020 Acme Corp. All rights reserved.
-          </p>
-      </div>
-
-
-
-
-      <!-- grid form 4 -->
-
-      <form class="w-full max-w-lg  border-b-8 pt-8">
-          <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-first-name">
-                      First Name
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name" type="text" placeholder="Jane">
-                  <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-              </div>
-              <div class="w-full md:w-1/2 px-3">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-last-name">
-                      Last Name
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-last-name" type="text" placeholder="Doe">
-              </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-password">
-                      Password
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-password" type="password" placeholder="******************">
-                  <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-              </div>
-          </div>
-          <div class="flex flex-wrap -mx-3 mb-2">
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-city">
-                      City
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-city" type="text" placeholder="Albuquerque">
-              </div>
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-state">
-                      State
-                  </label>
-                  <div class="relative">
-                      <select
-                          class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                          id="grid-state">
-                          <option>New Mexico</option>
-                          <option>Missouri</option>
-                          <option>Texas</option>
-                      </select>
-                      <div
-                          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 20 20">
-                              <path
-                                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                          </svg>
-                      </div>
-                  </div>
-              </div>
-              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                      for="grid-zip">
-                      Zip
-                  </label>
-                  <input
-                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-zip" type="text" placeholder="90210">
-              </div>
-          </div>
-      </form>
-
-      <!-- underline form  -->
-      <!-- form2  -->
-
-      <form class="max-w-md mx-auto">
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="email" name="floating_email" id="floating_email"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" " required />
-              <label for="floating_email"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                  address</label>
-          </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="password" name="floating_password" id="floating_password"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" " required />
-              <label for="floating_password"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
-          </div>
-          <div class="relative z-0 w-full mb-5 group">
-              <input type="password" name="repeat_password" id="floating_repeat_password"
-                  class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" " required />
-              <label for="floating_repeat_password"
-                  class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm
-                  password</label>
-          </div>
-          <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="relative z-0 w-full mb-5 group">
-                  <input type="text" name="floating_first_name" id="floating_first_name"
-                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" " required />
-                  <label for="floating_first_name"
-                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                      name</label>
-              </div>
-              <div class="relative z-0 w-full mb-5 group">
-                  <input type="text" name="floating_last_name" id="floating_last_name"
-                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" " required />
-                  <label for="floating_last_name"
-                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                      name</label>
-              </div>
-          </div>
-          <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="relative z-0 w-full mb-5 group">
-                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone"
-                      id="floating_phone"
-                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" " required />
-                  <label for="floating_phone"
-                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
-                      number (123-456-7890)</label>
-              </div>
-              <div class="relative z-0 w-full mb-5 group">
-                  <input type="text" name="floating_company" id="floating_company"
-                      class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                      placeholder=" " required />
-                  <label for="floating_company"
-                      class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
-                      (Ex. Google)</label>
-              </div>
-          </div>
-          <button type="submit"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-      </form>
-
-          <!-- form2  -->
-      <form class="max-w-sm mx-auto">
-          <div class="mb-5">
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                  email</label>
-              <input type="email" id="email"
-                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                  placeholder="name@flowbite.com" required />
-          </div>
-          <div class="mb-5">
-              <label for="password"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                  password</label>
-              <input type="password" id="password"
-                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                  required />
-          </div>
-          <div class="mb-5">
-              <label for="repeat-password"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat
-                  password</label>
-              <input type="password" id="repeat-password"
-                  class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                  required />
-          </div>
-          <div class="flex items-start mb-5">
-              <div class="flex items-center h-5">
-                  <input id="terms" type="checkbox" value=""
-                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                      required />
-              </div>
-              <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree
-                  with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and
-                      conditions</a></label>
-          </div>
-          <button type="submit"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register
-              new account</button>
-      </form>
-
-    <!-- form2  -->
-      <form class="">
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-            email</label>
-        <input type="email" id="email" aria-describedby="helper-text-explanation"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="name@flowbite.com">
-
-        <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">We’ll
-            never share your details. Read our <a href="#"
-                class="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a>.
-        </p>
-        <label for="email-address-icon"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
-    <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                <path
-                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
-                <path
-                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
-            </svg>
-        </div>
-        <input type="text" id="email-address-icon"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="name@flowbite.com">
+  <h1 class="max-auto text-4xl text-red-700">FORM SAMPLE</h1>
+  <div class=" max-auto max-w-2xl ">
+    <h1 class="text-4xl">NEW FORMS 7</h1> <br/>
+    <div>
+       <div class="flex div">
+        <div>item 1 </div>
+        <div>item 2 </div>
+        <div>item 3 </div>
+        <div>item 4 </div>
+        <div>item 5 </div>
+       </div>
     </div>
-        <label for="website-admin"
-        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
-    <div class="flex">
-        <span
-            class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                    d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
-            </svg>
-        </span>
-        <input type="text" id="website-admin"
-            class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Bonnie Green">
-    </div>
-          <div class="mb-5">
-              <label for="username-success"
-                  class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Your
-                  name</label>
-              <input type="text" id="username-success"
-                  class="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
-                  placeholder="Bonnie Green">
-              <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span
-                      class="font-medium">Alright!</span> Username available!</p>
-          </div>
-          <div>
-              <label for="username-error"
-                  class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Your name</label>
-              <input type="text" id="username-error"
-                  class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500"
-                  placeholder="Bonnie Green">
-              <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span
-                      class="font-medium">Oops!</span> Username already taken!</p>
-          </div>
-          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-            message</label>
-        <textarea id="message" rows="4"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Leave a comment..."></textarea>
-
-            <label for="countries"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your
-            country</label>
-        <select id="countries"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-
-            <option>United States</option>
-            <option>Canada</option>
-            <option>France</option>
-            <option>Germany</option>
-        </select>
-      </form>
-
-    <!-- form2  -->
-      <section class="bg-white dark:bg-gray-900">
-          <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-              <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new product</h2>
-              <form action="#">
-              
-
-                  <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
-                      <div class="sm:col-span-2">
-                          <label for="name"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product
-                              Name</label>
-                          <input type="text" name="name" id="name"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                              placeholder="Type product name" required="">
-                      </div>
-                      <div class="w-full">
-                          <label for="brand"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Brand</label>
-                          <input type="text" name="brand" id="brand"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                              placeholder="Product brand" required="">
-                      </div>
-                      <div class="w-full">
-                          <label for="price"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
-                          <input type="number" name="price" id="price"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                              placeholder="$2999" required="">
-                      </div>
-                      <div>
-                          <label for="category"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
-                          <select id="category"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                              <option selected="">Select category</option>
-                              <option value="TV">TV/Monitors</option>
-                              <option value="PC">PC</option>
-                              <option value="GA">Gaming/Console</option>
-                              <option value="PH">Phones</option>
-                          </select>
-                      </div>
-                      <div>
-                          <label for="item-weight"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item
-                              Weight (kg)</label>
-                          <input type="number" name="item-weight" id="item-weight"
-                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                              placeholder="12" required="">
-                      </div>
-                      <div class="col-span-1">
-                        <label for="selectcountry">Select Country</label>
-                        <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Red</div>
-                        <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Blue</div>
-                        <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Green</div>
-                        <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Yellow</div>
-                      </div>
-                      <div class="col-span-1">
-                        <label for="Price" class="block text-sm font-medium text-gray-900">Select City</label>
-                        <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Red</div>
-                        <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Blue</div>
-                        <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Green</div>
-                        <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Yellow</div>
-                        <div class="flex items-center mb-4">
-                            <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
-                                class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="country-option-4"
-                                class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                United Kingdom
-                            </label>
-                        </div>
-              
-                        <div class="flex items-center mb-2">
-                            <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
-                                class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
-                            <label for="country-option-4"
-                                class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                USA
-                            </label>
-                        </div>
-              
-                        <div class="flex items-center mb-2">
-                            <input id="option-disabled" type="radio" name="countries" value="China"
-                                class="w-4 h-4 border-gray-200 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
-                                disabled>
-                            <label for="option-disabled"
-                                class="block ms-2 text-sm font-medium text-gray-300 dark:text-gray-700">
-                                China (disabled)
-                            </label>
-                        </div>
-                      </div>
-                      <div class="sm:col-span-2">
-                          <label for="description"
-                              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                          <textarea id="description" rows="8"
-                              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                              placeholder="Your description here"></textarea>
-                      </div>
-                      <label class="inline-flex items-center mb-5 cursor-pointer">
-                        <input type="checkbox" value="" class="sr-only peer" checked>
-                        <div
-                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                        </div>
-                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Checked toggle</span>
-                    </label>
-              
-                    <label class="inline-flex items-center mb-5 cursor-pointer">
-                        <input type="checkbox" value="" class="sr-only peer" disabled>
-                        <div
-                            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                        </div>
-                        <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Disabled toggle</span>
-                    </label>
-    
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    for="user_avatar">Upload file</label>
+    <div class="flex flex-col">
+        <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name">
+                    First Name
+                </label>
                 <input
-                    class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                    aria-describedby="user_avatar_help" id="user_avatar" type="file">
-
-                <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">A profile
-                    picture is useful to confirm your are logged into your account</div>
-
-
-                    <div class="col-span-2">
-                        <fieldset>
-                            <legend class="sr-only">Checkbox variants</legend>
-                  
-                            <div class="flex items-center mb-4">
-                                <input checked id="checkbox-1" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
-                                    agree to the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms
-                                        and conditions</a>.</label>
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder="Jane">
+                <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name">
+                    Last Name
+                </label>
+                <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name" type="text" placeholder="Doe">
+            </div>
+        </div>
+        <div>
+            <h1 class="text-4xl">NEW FORMS 9</h1> <br/>
+            <form class="w-full max-w-lg  border-b-8 pt-8 ju">
+            
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-password">
+                            Password
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-password" type="password" placeholder="******************">
+                        <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-city">
+                            City
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-city" type="text" placeholder="Albuquerque">
+                    </div>
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-state">
+                            State
+                        </label>
+                        <div class="relative">
+                            <select
+                                class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="grid-state">
+                                <option>New Mexico</option>
+                                <option>Missouri</option>
+                                <option>Texas</option>
+                            </select>
+                            <div
+                                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
                             </div>
-                  
-                            <div class="flex items-center mb-4">
-                                <input id="checkbox-2" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="checkbox-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
-                                    want to get promotional offers</label>
-                            </div>
-                  
-                            <div class="flex items-center mb-4">
-                                <input id="checkbox-3" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                <label for="checkbox-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
-                                    am 18 years or older</label>
-                            </div>
-                  
-                            <div class="flex mb-4">
-                                <div class="flex items-center h-5">
-                                    <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox"
-                                        value=""
-                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                </div>
-                                <div class="ms-2 text-sm">
-                                    <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">Free
-                                        shipping via Flowbite</label>
-                                    <p id="helper-checkbox-text"
-                                        class="text-xs font-normal text-gray-500 dark:text-gray-400">For orders shipped from
-                                        $25 in books or $29 in other categories</p>
-                                </div>
-                            </div>
-                  
-                            <div class="flex items-center">
-                                <input id="international-shipping-disabled" type="checkbox" value=""
-                                    class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                                    disabled>
-                                <label for="international-shipping-disabled"
-                                    class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Eligible for
-                                    international shipping (disabled)</label>
-                            </div>
-                        </fieldset>
-                        <div>
-                            <input type="text" id="disabled-input" aria-label="disabled input"
-                            class="mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            value="Disabled input" disabled>
-                        <input type="text" id="disabled-input-2" aria-label="disabled input 2"
-                            class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            value="Disabled readonly input" disabled readonly>
                         </div>
                     </div>
-                    <button type="submit"
-                            class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-black bg-blue-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
-                    Add product
-                         </button>
-                  </div>
-             
-              </form>
+                    <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="grid-zip">
+                            Zip
+                        </label>
+                        <input
+                            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-zip" type="text" placeholder="90210">
+                    </div>
+                </div>
+            </form>
+      
+            <!-- form 2     -->
+            <h1 class="text-4xl">NEW FORMS 8</h1> <br/>
+            <div class="">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                            Username
+                        </label>
+                        <input
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                            Password
+                        </label>
+                        <input
+                            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            id="password" type="password" placeholder="******************">
+                        <p class="text-red-500 text-xs italic">Please choose a password.</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Sign In
+                        </button>
+                        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                            href="#">
+                            Forgot Password?
+                        </a>
+                    </div>
+                </form>
+                <p class="text-center text-gray-500 text-xs">
+                    &copy;2020 Acme Corp. All rights reserved.
+                </p>
+            </div>
+      
+        </div>
+  
+        <div>
 
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-                    <!-- Inline form 3 -->
-
-     
-          </div>
-          <form class="">
-            <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Sign Up</h1>
-            <div class="md:flex md:items-center mb-6">
-                <div class="md:w-1/3">
-                    <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                        for="inline-password">
+        <!-- grid form 4 -->
+        <h1 class="text-4xl">NEW FORMS 9</h1> <br/>
+        <form class="w-full max-w-lg  border-b-8 pt-8">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-first-name">
+                        First Name
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        id="grid-first-name" type="text" placeholder="Jane">
+                    <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-last-name">
+                        Last Name
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-last-name" type="text" placeholder="Doe">
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password">
                         Password
                     </label>
-                </div>
-                <div class="md:w-2/3">
                     <input
-                        class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                        id="inline-password" type="password" placeholder="******************">
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" type="password" placeholder="******************">
+                    <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
                 </div>
             </div>
-            <div class="md:flex md:items-center mb-6">
-                <div class="md:w-1/3"></div>
-                <label class="md:w-2/3 block text-gray-500 font-bold">
-                    <input class="mr-2 leading-tight" type="checkbox">
-                    <span class="text-sm">
-                        Send me your newsletter!
-                    </span>
-                </label>
-            </div>
-            <div class="md:flex md:items-center">
-                <div class="md:w-1/3"></div>
-                <div class="md:w-2/3">
-                    <button
-                        class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                        type="button">
-                        Sign Up
-                    </button>
+            <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-city">
+                        City
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-city" type="text" placeholder="Albuquerque">
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-state">
+                        State
+                    </label>
+                    <div class="relative">
+                        <select
+                            class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            id="grid-state">
+                            <option>New Mexico</option>
+                            <option>Missouri</option>
+                            <option>Texas</option>
+                        </select>
+                        <div
+                            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-zip">
+                        Zip
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-zip" type="text" placeholder="90210">
                 </div>
             </div>
         </form>
-      </section>
-     
+  
+        <!-- underline form  -->
+        <!-- form2  -->
+        <h1 class="text-4xl">NEW FORMS 1</h1> <br/>
+        <form class="max-w-md mx-auto">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                <label for="floating_email"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                    address</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="password" name="floating_password" id="floating_password"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                <label for="floating_password"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="password" name="repeat_password" id="floating_repeat_password"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " required />
+                <label for="floating_repeat_password"
+                    class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm
+                    password</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_first_name" id="floating_first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_first_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                        name</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_last_name" id="floating_last_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_last_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                        name</label>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone"
+                        id="floating_phone"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_phone"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                        number (123-456-7890)</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_company" id="floating_company"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_company"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company
+                        (Ex. Google)</label>
+                </div>
+            </div>
+            <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+        </div>
+  
+  <div>
+
+    <br>
+    <br>
+    <br>
+            <hr>     
+          <!-- form2  -->
+           <h1 class="text-4xl">NEW FORMS</h1> <br/>
+            <form class="">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                  email</label>
+              <input type="email" id="email" aria-describedby="helper-text-explanation"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@flowbite.com">
+      
+              <p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">We’ll
+                  never share your details. Read our <a href="#"
+                      class="font-medium text-blue-600 hover:underline dark:text-blue-500">Privacy Policy</a>.
+              </p>
+              <label for="email-address-icon"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+          <div class="relative">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                      <path
+                          d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                      <path
+                          d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                  </svg>
+              </div>
+              <input type="text" id="email-address-icon"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@flowbite.com">
+          </div>
+              <label for="website-admin"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
+          <div class="flex">
+              <span
+                  class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                          d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                  </svg>
+              </span>
+              <input type="text" id="website-admin"
+                  class="rounded-none rounded-e-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Bonnie Green">
+          </div>
+                <div class="mb-5">
+                    <label for="username-success"
+                        class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Your
+                        name</label>
+                    <input type="text" id="username-success"
+                        class="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                        placeholder="Bonnie Green">
+                    <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span
+                            class="font-medium">Alright!</span> Username available!</p>
+                </div>
+                <div>
+                    <label for="username-error"
+                        class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Your name</label>
+                    <input type="text" id="username-error"
+                        class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500"
+                        placeholder="Bonnie Green">
+                    <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span
+                            class="font-medium">Oops!</span> Username already taken!</p>
+                </div>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                  message</label>
+              <textarea id="message" rows="4"
+                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Leave a comment..."></textarea>
+      
+                  <label for="countries"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your
+                  country</label>
+              <select id="countries"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>France</option>
+                  <option>Germany</option>
+              </select>
+            </form>
+  </div>
+
+  <br>
+  <br>
+  <br>
+          <hr>
+      <!-- form2  -->
+        <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-2xl lg:py-16">
+                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new product</h2>
+                <form action="#">
+                
+  
+                    <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                        <div class="sm:col-span-2">
+                            <label for="name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product
+                                Name</label>
+                            <input type="text" name="name" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Type product name" required="">
+                        </div>
+                        <div class="w-full">
+                            <label for="brand"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Brand</label>
+                            <input type="text" name="brand" id="brand"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Product brand" required="">
+                        </div>
+                        <div class="w-full">
+                            <label for="price"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                            <input type="number" name="price" id="price"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="$2999" required="">
+                        </div>
+                        <div>
+                            <label for="category"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                            <select id="category"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option selected="">Select category</option>
+                                <option value="TV">TV/Monitors</option>
+                                <option value="PC">PC</option>
+                                <option value="GA">Gaming/Console</option>
+                                <option value="PH">Phones</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="item-weight"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item
+                                Weight (kg)</label>
+                            <input type="number" name="item-weight" id="item-weight"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="12" required="">
+                        </div>
+                        <div class="col-span-1">
+                          <label for="selectcountry">Select Country</label>
+                          <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Red</div>
+                          <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Blue</div>
+                          <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Green</div>
+                          <div><input type="checkbox" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Yellow</div>
+                        </div>
+                        <div class="col-span-1">
+                          <label for="Price" class="block text-sm font-medium text-gray-900">Select City</label>
+                          <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Red</div>
+                          <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Blue</div>
+                          <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Green</div>
+                          <div><input type="radio" name="red" id="" aria-selected="true" value="red" /><label for=""></label>Yellow</div>
+                          <div class="flex items-center mb-4">
+                              <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
+                                  class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                              <label for="country-option-4"
+                                  class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                  United Kingdom
+                              </label>
+                          </div>
+                
+                          <div class="flex items-center mb-2">
+                              <input id="country-option-4" type="radio" name="countries" value="United Kingdom"
+                                  class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
+                              <label for="country-option-4"
+                                  class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                  USA
+                              </label>
+                          </div>
+                
+                          <div class="flex items-center mb-2">
+                              <input id="option-disabled" type="radio" name="countries" value="China"
+                                  class="w-4 h-4 border-gray-200 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"
+                                  disabled>
+                              <label for="option-disabled"
+                                  class="block ms-2 text-sm font-medium text-gray-300 dark:text-gray-700">
+                                  China (disabled)
+                              </label>
+                          </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="description"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                            <textarea id="description" rows="8"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Your description here"></textarea>
+                        </div>
+                        <label class="inline-flex items-center mb-5 cursor-pointer">
+                          <input type="checkbox" value="" class="sr-only peer" checked>
+                          <div
+                              class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                          </div>
+                          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Checked toggle</span>
+                      </label>
+                
+                      <label class="inline-flex items-center mb-5 cursor-pointer">
+                          <input type="checkbox" value="" class="sr-only peer" disabled>
+                          <div
+                              class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                          </div>
+                          <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Disabled toggle</span>
+                      </label>
+      
+                      <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      for="user_avatar">Upload file</label>
+                  <input
+                      class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                      aria-describedby="user_avatar_help" id="user_avatar" type="file">
+  
+                  <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">A profile
+                      picture is useful to confirm your are logged into your account</div>
+  
+  
+                      <div class="col-span-2">
+                          <fieldset>
+                              <legend class="sr-only">Checkbox variants</legend>
+                    
+                              <div class="flex items-center mb-4">
+                                  <input checked id="checkbox-1" type="checkbox" value=""
+                                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                  <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
+                                      agree to the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms
+                                          and conditions</a>.</label>
+                              </div>
+                    
+                              <div class="flex items-center mb-4">
+                                  <input id="checkbox-2" type="checkbox" value=""
+                                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                  <label for="checkbox-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
+                                      want to get promotional offers</label>
+                              </div>
+                    
+                              <div class="flex items-center mb-4">
+                                  <input id="checkbox-3" type="checkbox" value=""
+                                      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                  <label for="checkbox-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I
+                                      am 18 years or older</label>
+                              </div>
+                    
+                              <div class="flex mb-4">
+                                  <div class="flex items-center h-5">
+                                      <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox"
+                                          value=""
+                                          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                  </div>
+                                  <div class="ms-2 text-sm">
+                                      <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">Free
+                                          shipping via Flowbite</label>
+                                      <p id="helper-checkbox-text"
+                                          class="text-xs font-normal text-gray-500 dark:text-gray-400">For orders shipped from
+                                          $25 in books or $29 in other categories</p>
+                                  </div>
+                              </div>
+                    
+                              <div class="flex items-center">
+                                  <input id="international-shipping-disabled" type="checkbox" value=""
+                                      class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                      disabled>
+                                  <label for="international-shipping-disabled"
+                                      class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Eligible for
+                                      international shipping (disabled)</label>
+                              </div>
+                          </fieldset>
+                          <div>
+                              <input type="text" id="disabled-input" aria-label="disabled input"
+                              class="mb-5 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              value="Disabled input" disabled>
+                          <input type="text" id="disabled-input-2" aria-label="disabled input 2"
+                              class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              value="Disabled readonly input" disabled readonly>
+                          </div>
+                      </div>
+                      <button type="submit"
+                              class="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-black bg-blue-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                      Add product
+                           </button>
+                    </div>
+               
+                </form>
+  
+                <br/>
+                <br/>
+                      <!-- Inline form 3 -->
+                      <br>
+                      <br>
+                      <br>
+                              <hr>
+       
+            </div>
+            <form class="">
+              <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Sign Up</h1>
+              <div class="md:flex md:items-center mb-6">
+                  <div class="md:w-1/3">
+                      <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                          for="inline-password">
+                          Password
+                      </label>
+                  </div>
+                  <div class="md:w-2/3">
+                      <input
+                          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                          id="inline-password" type="password" placeholder="******************">
+                  </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                  <div class="md:w-1/3"></div>
+                  <label class="md:w-2/3 block text-gray-500 font-bold">
+                      <input class="mr-2 leading-tight" type="checkbox">
+                      <span class="text-sm">
+                          Send me your newsletter!
+                      </span>
+                  </label>
+              </div>
+              <div class="md:flex md:items-center">
+                  <div class="md:w-1/3"></div>
+                  <div class="md:w-2/3">
+                      <button
+                          class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                          type="button">
+                          Sign Up
+                      </button>
+                  </div>
+              </div>
+          </form>
+        </section>
+<br>
+<br>
+<br>
+        <hr>
+  
+            <!-- form2  -->
+            <form class="max-w-sm mx-auto">
+                <div class="mb-5">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                        email</label>
+                    <input type="email" id="email"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        placeholder="name@flowbite.com" required />
+                </div>
+                <div class="mb-5">
+                    <label for="password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                        password</label>
+                    <input type="password" id="password"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        required />
+                </div>
+                <div class="mb-5">
+                    <label for="repeat-password"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Repeat
+                        password</label>
+                    <input type="password" id="repeat-password"
+                        class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        required />
+                </div>
+                <div class="flex items-start mb-5">
+                    <div class="flex items-center h-5">
+                        <input id="terms" type="checkbox" value=""
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                            required />
+                    </div>
+                    <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">22I agree
+                        with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and
+                            conditions</a></label>
+                </div>
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register
+                    new account</button>
+            </form>
+  </div>
+
+  
+  
+  <input type="email" class="form-input px-4 py-3 rounded-full">
+
+  <select class="form-select px-4 py-3 rounded-xl">
+    <option value="ssds">sdsdssdsdsd</option>
+    <option value="ssds">sdsdssdsdsd</option>
+    <option value="ssds">sdsdssdsdsd</option>
+  </select>
+  
+  <input type="checkbox" class="form-checkbox rounded text-pink-500" />
+  
+   <body>
+      <div class="antialiased text-gray-900 px-6">
+        <div class="max-w-xl mx-auto py-12 md:max-w-4xl">
+          <h2 class="text-2xl font-bold">Reset styles</h2>
+          <p class="mt-2 text-lg text-gray-500">
+            These are form elements this plugin styles by default.
+          </p>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            <div class="grid grid-cols-1 gap-6">
+              <label class="block">
+                <span class="text-gray-700">Input (text)</span>
+                <input
+                  type="text"
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (email)</span>
+                <input
+                  type="email"
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (email, multiple)</span>
+                <input
+                  type="email"
+                  multiple
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (password)</span>
+                <input
+                  type="password"
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (date)</span>
+                <input type="date" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (datetime-local)</span>
+                <input type="datetime-local" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (month)</span>
+                <input type="month" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (number)</span>
+                <input type="number" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (search)</span>
+                <input type="search" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (time)</span>
+                <input type="time" class="form-input mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (week)</span>
+                <input type="week" class="form-input mt-1 block w-full" />
+              </label>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+              <label class="block">
+                <span class="text-gray-700">Input (tel)</span>
+                <input
+                  type="tel"
+                  multiple
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (url)</span>
+                <input
+                  type="url"
+                  multiple
+                  class="form-input mt-1 block w-full"
+                  placeholder="john@example.com"
+                />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Select</span>
+                <select class="form-select block w-full mt-1">
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Select (single, with size)</span>
+                <select class="form-select block w-full mt-1" size="3">
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Select (multiple)</span>
+                <select class="form-multiselect block w-full mt-1" multiple>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Select (multiple, with size)</span>
+                <select class="form-multiselect block w-full mt-1" multiple size="3">
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Textarea</span>
+                <textarea
+                  class="form-textarea mt-1 block w-full h-24"
+                  rows="3"
+                  placeholder="Enter some long form content."
+                ></textarea>
+              </label>
+              <fieldset class="block">
+                <legend class="text-gray-700">Checkboxes</legend>
+                <div class="mt-2">
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-checkbox" type="checkbox" checked />
+                      <span class="ml-2">Option 1</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-checkbox" type="checkbox" />
+                      <span class="ml-2">Option 2</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-checkbox" type="checkbox" />
+                      <span class="ml-2">Option 3</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="block">
+                <legend class="text-gray-700">Radio Buttons</legend>
+                <div class="mt-2">
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-radio" type="radio" checked name="radio-direct" value="1" />
+                      <span class="ml-2">Option 1</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-radio" type="radio" name="radio-direct" value="2" />
+                      <span class="ml-2">Option 2</span>
+                    </label>
+                  </div>
+                  <div>
+                    <label class="inline-flex items-center">
+                      <input class="form-radio" type="radio" name="radio-direct" value="3" />
+                      <span class="ml-2">Option 3</span>
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-4xl mx-auto py-12">
+          <h2 class="text-2xl font-bold">Untouched</h2>
+          <p class="mt-2 text-lg text-gray-500">
+            These are form elements we don't handle (yet?), but we use this to make sure we haven't
+            accidentally styled them by mistake.
+          </p>
+          <div class="mt-8 grid grid-cols-2 gap-6 items-start">
+            <div class="grid grid-cols-1 gap-6">
+              <label class="block">
+                <span class="text-gray-700">Input (range)</span>
+                <input type="range" class="mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (color)</span>
+                <input type="color" class="mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (file)</span>
+                <input type="file" class="mt-1 block w-full" />
+              </label>
+              <label class="block">
+                <span class="text-gray-700">Input (file, multiple)</span>
+                <input type="file" multiple class="mt-1 block w-full" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+       <div class="antialiased text-gray-900 px-6">
+        <div class="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
+          <div class="py-8">
+            <h1 class="text-4xl font-bold">@tailwindcss/forms examples</h1>
+            <p class="mt-2 text-lg text-gray-600">
+              An opinionated form reset designed to make form elements easy to style with utility
+              classes.
+            </p>
+            <div class="mt-4 flex space-x-4">
+              <a class="text-lg underline" href="https://github.com/tailwindlabs/tailwindcss-forms"
+                >Documentation</a
+              >
+              <a class="text-lg underline" href="/kitchen-sink.html">Kitchen Sink</a>
+            </div>
+          </div>
+          <div class="py-12">
+            <h2 class="text-2xl font-bold">Unstyled</h2>
+            <p class="mt-2 text-lg text-gray-600">This is how form elements look out of the box.</p>
+            <div class="mt-8 max-w-md">
+              <div class="grid grid-cols-1 gap-6">
+                <label class="block">
+                  <span class="text-gray-700">Full name</span>
+                  <input type="text" class="mt-1 block w-full" placeholder="" />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Email address</span>
+                  <input type="email" class="mt-1 block w-full" placeholder="john@example.com" />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">When is your event?</span>
+                  <input type="date" class="mt-1 block w-full" />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">What type of event is it?</span>
+                  <select class="block w-full mt-1">
+                    <option>Corporate event</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Additional details</span>
+                  <textarea class="mt-1 block w-full" rows="3"></textarea>
+                </label>
+                <div class="block">
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input type="checkbox" checked />
+                        <span class="ml-2">Email me news and special offers</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-12">
+            <h2 class="text-2xl font-bold">Simple</h2>
+            <div class="mt-8 max-w-md">
+              <div class="grid grid-cols-1 gap-6">
+                <label class="block">
+                  <span class="text-gray-700">Full name</span>
+                  <input
+                    type="text"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    placeholder=""
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Email address</span>
+                  <input
+                    type="email"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    placeholder="john@example.com"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">When is your event?</span>
+                  <input
+                    type="date"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">What type of event is it?</span>
+                  <select
+                    class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  >
+                    <option>Corporate event</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Additional details</span>
+                  <textarea
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    rows="3"
+                  ></textarea>
+                </label>
+                <div class="block">
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50"
+                          checked
+                        />
+                        <span class="ml-2">Email me news and special offers</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-12">
+            <h2 class="text-2xl font-bold">Underline</h2>
+            <div class="mt-8 max-w-md">
+              <div class="grid grid-cols-1 gap-6">
+                <label class="block">
+                  <span class="text-gray-700">Full name</span>
+                  <input
+                    type="text"
+                    class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
+                    placeholder=""
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Email address</span>
+                  <input
+                    type="email"
+                    class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
+                    placeholder="john@example.com"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">When is your event?</span>
+                  <input
+                    type="date"
+                    class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">What type of event is it?</span>
+                  <select
+                    class="block w-full mt-0 px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
+                  >
+                    <option>Corporate event</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Additional details</span>
+                  <textarea
+                    class="mt-0 block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
+                    rows="2"
+                  ></textarea>
+                </label>
+                <div class="block">
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="border-gray-300 border-2 text-black focus:border-gray-300 focus:ring-black"
+                        />
+                        <span class="ml-2">Email me news and special offers</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-12">
+            <h2 class="text-2xl font-bold">Solid</h2>
+            <div class="mt-8 max-w-md">
+              <div class="grid grid-cols-1 gap-6">
+                <label class="block">
+                  <span class="text-gray-700">Full name</span>
+                  <input
+                    type="text"
+                    class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder=""
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Email address</span>
+                  <input
+                    type="email"
+                    class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    placeholder="john@example.com"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">When is your event?</span>
+                  <input
+                    type="date"
+                    class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                  />
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">What type of event is it?</span>
+                  <select
+                    class="block w-full mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                  >
+                    <option>Corporate event</option>
+                    <option>Wedding</option>
+                    <option>Birthday</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-gray-700">Additional details</span>
+                  <textarea
+                    class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    rows="3"
+                  ></textarea>
+                </label>
+                <div class="block">
+                  <div class="mt-2">
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500"
+                        />
+                        <span class="ml-2">Email me news and special offers</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 

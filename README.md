@@ -1,5 +1,8 @@
 # tailwind-learning
 
+### Tailwind Cheetsheet
+ - https://tailwindcomponents.com/cheatsheet/
+ - start to end links - https://github.com/aniftyco/awesome-tailwindcss?tab=readme-ov-file
 
 ### Learn CSS
  - https://www.landingfolio.com/ KEEP THE PRACTICE ON THE TAILWIND
@@ -90,6 +93,52 @@ https://www.youtube.com/watch?v=vSB0tZw0fVs
 https://tailwindcomponents.com/gradient-generator/
 
 ### Tutorials:
+
  - https://www.geeksforgeeks.org/tailwind-css-font-size/?ref=lbp
+ - https://tailscan.com/tailwind/flexbox-and-grid (very nice with eammple for grid and flex)
  - https://tailwind.build/classes/flex/flex-row (how to make flex)
     - https://shuffle.dev/components/tailwind(fortaildn/materialui)
+
+
+### New Property
+ - acccent-line-400  - use on top to make every thing same color
+ - mx-auto max-2-2xl p-8 
+ - text-[min(19vw, 130px)]text-[10vh] - text-[min(19vw, 130px)]
+ - balance - br - title to break, balance
+ - group - help to style chile form the parent, radio button - border, ring, founded-full, online-noe, checked:border-indogo-500    checked: ring-white,     based on the rdio change change the layout of parent - has-[:checked]:bg-indigo-600 - https://youtu.be/CLkxRnRQtDE?t=1376
+ - @continer - help to mody the child - https://youtu.be/CLkxRnRQtDE?t=2036
+
+
+###  normal CSS
+color:red
+background-color: blue
+font-family:
+font-size: medium/large
+font-weight: bold
+text-align: center
+text-decoration: line-through
+line-height:10px
+margin: 110px
+padding:20px
+border:1px red solid;
+width/height:20px
+display:Flex/grid/inline/block/none
+position: static/ absolute/ fixed
+float: right/left/none
+clear: left/right/both
+visibility: visible/hidden/collapse
+opacity:1(solid)/0(transparent)
+z-index:1/2/-1/02
+
+<div class="mx-auto w-1/2 rounded-lg bg-gray-200 py-8 px-4 shadow-md" style="border: 1px solid #007bff;"></div>
+
+<div style="display:flex; flex-direction: row; justify-content: center; gap:30px;border: 1px red solid ">
+  <div class="" style="color: #ff0000;">Itemss</div>
+  <div class="" style="background-color: light-blue; width:100px; height:100px">Itemss</div>
+  <div class="" style="color: 'red'">Itemss</div>
+  <div class="" style="color: 'red'">Itemss</div>
+</div>
+
+
+
+
