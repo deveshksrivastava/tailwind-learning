@@ -245,7 +245,7 @@ flex						 			                                      flex     				-keep in same 1
 flex-direction: row/column			                            flex-row/flex-col                   - sameline[flex-row], virticle[flex-cols]
 flex-wrap: wrap					 			    wrap
 justify-content:flex-start|flex-end|center
-    |space-between|space-around(horizonatl)                 			justify-start   /end/center/between/around/evenly     [Center : justify-center & items-center]
+    |space-between|space-around(horizonatl)                 justify-start   /end/center/between/around/evenly     [Center : justify-center & items-center]
 align-items; flex-start/end/center/stretch(vertical)			  items-start  (+flex)   /end/center/baseline(vimp)/stretch(default) (height reqired)
 align-contect: center/flex-start/end					              content-center (no flex+ worked in child also when height given)  
                                                                       /start/end/between/around/evenly {only works when flex-wrap}
@@ -393,19 +393,27 @@ sm:ml-3 sm:w-auto sm:text-sm">Hello</button>
 10 tips and tricks tailwind
 1. group and peer : chage the color on for outer and inner div - group on outer and group-hover:bg-red-400, peer and pear-hover
 2. responsive - grid grid-cols-2 gap-2 p-5 min-[400px]:grid-cols-3 -: change to 3 cols at 400px
-
 4. width/height same: size-24 for circle/square
 5. border at the bottom - divide/space
-	divide divide-red-3000
-	<div class="space-y-4 or divide">
+  -->>>divide/space
+	<div class="space-y-4 or divide-y-2 divide-red-300">
   		<div class="bg-blue-500">continer</div>
  		 <div class="bg-blue-500">continer</div>
   		<div class="bg-blue-500">continer</div>
 	</div>
 
+  -->>>ring
+  <div class="bg-red-300 ring-8 ring-red-800 ring-offset-4">item 3</div>
 6. flexbox/grid gap/space: when not using flex/gap use space-y-5 i.e: https://tailwindcss.com/docs/space
 7. Gradent + text border,ring- https://www.youtube.com/watch?v=x1RJ5Q09PqM
 8. Making mark donwn page - class prose
+9. use of variables
+  < div className='text-[color:var(--primary)]
+  in .css class
+    :root {
+      --primary: red;
+    }
+
 
 
 ***************************************************
