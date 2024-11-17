@@ -1,16 +1,15 @@
 
-    <h1>tailwind css	</h1>
+# Tailwind css
 	
-    Shortcut - https://tailwind.build/classes		
-		TAILWIND
-margin/padding/height/width		
+
+#### Shortcut - https://tailwind.build/classes		
+### margin/padding/height/width		
 	<p>width	w-8, w-full, w-2/3, w-[40px]</p>
 	<p>height	h-12, h-2/4</p>
 	<p>margin	m-4, m-auto, mt-2(top), mb-2(bottom), mx-2(x-axis), my-2(y-axis)#</p>
 	<p>padding	"p-4, p-auto, pt-2(top), pb-2(bottom), px-2(x-axis), py-2(y-axis)#</p>
-Making center text inside div [px-4, py4]
-"
-Border/background/underline		
+#### Making center text inside div [px-4, py4]
+### Border/background/underline		
 	border-top 	border-t
 	background color	bg-red-200
 	cursor-pointer	
@@ -19,111 +18,129 @@ Border/background/underline
 	opacity	bg-opecity-5
 ```		
 text		
-	Font Size:	text-xs (extra small), text-sm (small), text-base (base size), text-lg (large), text-xl (extra large), and so on, to set the font size.
-	Font Weight(bold):	font-thin, font-light, font-normal, font-medium, font-semibold, font-bold, and font-extrabold adjust the font weight for different
-	Font Style (Italic, Oblique):	italic
-	Text color:	text-gray-700, text-red-500, text-blue-400)
-	Text Alignment:	text-left, text-center, and text-right to align text left, center, or right.
-	Uppercase, Lowercase, Capitalize	uppercase, lowercase, and capitalize transform text to uppercase, lowercase, or capitalize the first letter, respectively.
-	Underline, Line-Through	underline, line-through, and no-underline
-	Line Height:	leading-6, leading-8, leading-loose (and others) to adjust the vertical spacing between lines of text.
-	Letter Spacing:	tracking-tight, tracking-normal, and tracking-wide control the spacing between letters.
-	Text Indentation:	text-indent-2 and similar classes to indent the first line of text.
-	Other Text Properties:	opacity (opacity-50), text overflow (truncate), and text decoration style (decoration-dashed).
-	hover	"Background color (bg-*): hover:bg-red-200
-Text color (text-*): hover:text-green-500
-Opacity (opacity-*): bg-red-400/40,  hover:opacity-75 (75% opacity on hover)
-Border (border-*): hover:border-dashed (dashed border on hover)
-Shadow (shadow-*): hover:shadow-md (medium shadow on hover)"
+ - Font Size:	text-xs (extra small), text-sm (small), text-base (base size), text-lg (large), text-xl (extra large)
+ - Font Weight(bold):	font-thin, font-light, font-normal, font-medium, font-semibold, font-bold, 
+ - Font Style (Italic, Oblique):	italic
+ - Text color:	text-gray-700, text-red-500, text-blue-400)
+ - Text Alignment:	text-left, text-center, and text-right to align text left, center, or right.
+ - Uppercase, Lowercase, Capitalize	uppercase, lowercase, and capitalize transform text to uppercase, lowercase.
+ - Underline, Line-Through	underline, line-through, and no-underline
+ - Line Height:	leading-6, leading-8, leading-loose (and others) to adjust the vertical spacing between lines of text.
+ - Letter Spacing:	tracking-tight, tracking-normal, and tracking-wide control the spacing between letters.
+ - Text Indentation:	text-indent-2 and similar classes to indent the first line of text.
+ - Other Text Properties:	opacity (opacity-50), text overflow (truncate), and text decoration style (decoration-dashed).
+ - hover	"Background color (bg-*): hover:bg-red-200
+ - Text color (text-*): hover:text-green-500
+ - Opacity (opacity-*): bg-red-400/40,  hover:opacity-75 (75% opacity on hover)
+ - Border (border-*): hover:border-dashed (dashed border on hover)
+ - Shadow (shadow-*): hover:shadow-md (medium shadow on hover)"
+ - hover-underline- hover space	underline hover:underline
+ - focus	focus:outline-blue - This button will have a blue outline on focus
+ - active	active:bg-gray-200
+ - whitepace-nowrap	whitespace-nowrap">This text will not wrap to the next line
+ - line-clamp	truncate max-h-10 overflow-ellipsis">This text will be truncated after 2 lines
+ - truncate	truncate max-w-40 overflow-ellipsis">This text will be truncated with ellipsis (...)
+ - leading-tight	leading-tight">This text has tighter line spacing
+ - tracking-wider	tracking-wide">This text has wider letter spacing
 ```
-		"<h1 class=""text-3xl font-bold text-center mb-4"">This is a heading</h1>
+
+### Sample
+```
+"<h1 class=""text-3xl font-bold text-center mb-4"">This is a heading</h1>
 <p class=""text-gray-700 text-base leading-loose"">This is some paragraph text.</p>
 <span class=""text-red-500 underline uppercase tracking-wide"">Important Text</span>"
-		<span class="underline hover:underline">This text will underline on hover</span>
-	hover-underline- hover space	underline hover:underline
-	focus	focus:outline-blue - This button will have a blue outline on focus
-	active	active:bg-gray-200
-	whitepace-nowrap	whitespace-nowrap">This text will not wrap to the next line
-	line-clamp	truncate max-h-10 overflow-ellipsis">This text will be truncated after 2 lines
-	truncate	truncate max-w-40 overflow-ellipsis">This text will be truncated with ellipsis (...)
-	leading-tight	leading-tight">This text has tighter line spacing
-	tracking-wider	tracking-wide">This text has wider letter spacing
+<span class="underline hover:underline">This text will underline on hover</span>
+```
 	
 		
-hide & show		
-	block level	
-	inline block	
-	hidden	
+### hide & show		
+ - block level	
+ - inline block	
+ - hidden	
 
 
-****************CSS VERSION**************************
+## Bacics of CSS
 CSS
+```
+ - width: 10px;
+ -  height: 20px;
+ -  margin:20px
+ -  padding:20px, padding-top:20px
 
- width: 10px;
- height: 20px;
- margin:20px
- padding:20px, padding-top:20px
+ - border: 2px solid red; /* 2px thick, solid style, red color */
+ - background-color: color;
+ - cursor: pointer;
+ - border-radius: 20px 50px 10px 30px; /* Top-left, top-right, bottom-right, bottom-left */ }
+ - box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 2px right, 2px down, 5px blur, 30% opacity black */
+ - opacity: 0.5;   
+ - font-size: 1.875rem
+ - font-width: 2rem
+ - font-style: italic;
+ - color: #717171; /* Adjust for text color classes */ 
+ -  text-align: right;
+ -  text-transform: uppercase; 
+ - text-decoration: underline;
+ - line-height: 1.75rem
+ - letter-spacing: normal;
+ - letter-spacing: 0.1em;
+ - opacity: 0.5;    text-decoration-style: dashed; /* Applies a dashed underline to the text */
+ - text-overflow: ellipsis; /* Truncates overflowing text with an ellipsis (...) */
+ - text-decoration: underline;
+ - .element:focus { outline: 1px solid blue; /* Customize outline style and color */ }
+ - .element:active { background-color: lightgray; /* Adjust background color */ }
+ - white-space: nowrap;
+ - .element { display: -webkit-box; -webkit-line-clamp: 2; /* Adjust the number of lines to clamp */ overflow: hidden; }
+ - .element { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; /* Optional to prevent unwanted line breaks */ }
+ - line-height: 1.2; /* Adjust line-height for tighter spacing */
+ - letter-spacing: 0.1em; /* Adjust letter spacing for wider spacing */
 
-border: 2px solid red; /* 2px thick, solid style, red color */
-background-color: color;
-cursor: pointer;
-border-radius: 20px 50px 10px 30px; /* Top-left, top-right, bottom-right, bottom-left */ }
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 2px right, 2px down, 5px blur, 30% opacity black */
-opacity: 0.5;   
+ - image - h-64 w-full 
+	object-cover, 
+	object-center (remvoe distrotatoin and always in center)
+	inset-0 h-full w-full (take full image space + object-cover + object-center)
+
+Make center: 
+ 	1. (mx-auto max-w-md) -: makeing center and middle 
+ 	2. (absolute): mx-auto, my-auto, change with top, left, right
+ 	3. flex: flex items-center justify-center, h-16
+ -	max-w-md mx-auto(margin-left/right)  : Making center
+ - 	breakpoints
+	// sm:mx-auto sm:w-4/5 - make center also try (max-w-md max-auto)
+ -	container+mx-auto+: making at the center of the screen
+	<div class="container mx-auto bg-orange-300  px-4">
+  		<div>continer</div>
+	</div>
+ -	or 
+	theam :{  
+          constiner:{ 
+    	  	center:true, padding:'2rem'
+	}}
+
+ -	Text center(important)
+	- text-center, tracking-wide
+```
 
 
-font-size: 1.875rem
-font-width: 2rem
-font-style: italic;
-color: #717171; /* Adjust for text color classes */ 
- text-align: right;
- text-transform: uppercase; 
-text-decoration: underline;
-line-height: 1.75rem
-letter-spacing: normal;
-letter-spacing: 0.1em;
-opacity: 0.5;    text-decoration-style: dashed; /* Applies a dashed underline to the text */
-text-overflow: ellipsis; /* Truncates overflowing text with an ellipsis (...) */
-
-
-text-decoration: underline;
-.element:focus { outline: 1px solid blue; /* Customize outline style and color */ }
-.element:active { background-color: lightgray; /* Adjust background color */ }
-white-space: nowrap;
-.element { display: -webkit-box; -webkit-line-clamp: 2; /* Adjust the number of lines to clamp */ overflow: hidden; }
-.element { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; /* Optional to prevent unwanted line breaks */ }
-line-height: 1.2; /* Adjust line-height for tighter spacing */
-letter-spacing: 0.1em; /* Adjust letter spacing for wider spacing */
- 
-
-
-
-
-*****************END******************
-
-
-
-
-
-
-hide and show
+## hide and show
+```
 Use Case for CSS Display Values
-Block:
-Use Case: Ideal for creating sections or divisions within a webpage, such as paragraphs (<p>), headers (<h1>-<h6>), and divisions (<div>). Block elements consume the full width available, stacking vertically.
+#### Block:
+ - Use Case: Ideal for creating sections or divisions within a webpage, such as paragraphs (<p>), headers (<h1>-<h6>), and divisions (<div>). Block elements consume the full width available, stacking vertically.
 Example: Creating a layout structure or separating content into distinct sections.
 
-Inline:
+#### Inline:
 Use Case: Suitable for styling text or content within a block without breaking the flow. Inline elements do not start on a new line and only occupy as much width as necessary.
 Example: Styling a span of text within a paragraph without affecting the document's layout, such as <span>, <a>, and <img>.
 
-Inline-Block:
+#### Inline-Block:
 Use Case: Combines the characteristics of both inline and block elements. It allows elements to sit next to each other (like inline elements) but also respects width and height properties (like block elements).
 Example: Creating a horizontal navigation menu where each item has specific dimensions.
 
-Inline-Flex:
+#### Inline-Flex:
 Use Case: A variant of display: flex; that allows the container to behave like an inline element while its children follow the flexbox model. Useful for aligning items horizontally or vertically within a line while maintaining the document's inline flow.
 Example: Aligning a small group of content or controls within a larger inline context, such as a form with input fields and buttons that need to be aligned in a row without breaking the surrounding text flow.
-
+```
+```
         ==>https://blog.devgenius.io/css-display-flex-vs-block-inline-and-inline-block-explained-5fa588a3a960
         ==>https://www.youtube.com/watch?v=3elGSZSWTbM  
         ==>https://www.youtube.com/watch?v=NUDLB5WG_6E
@@ -142,47 +159,17 @@ Example: Aligning a small group of content or controls within a larger inline co
   hidden md:contents - hide on medium screen and show on other screen
   hidden md:flow-root - hide on medium screen and show on other screen
   hidden md:grid-cols-3 - hide on medium screen and show on other screen
-
-
-	<div class="">
-  		<h3>Use of Inline Block to make in collumn</h3>
-  		<div class="bg-red-200 block h-23">sdsds</div>
-  		<!-- <div class="bg-red-200 inline h-23 w-23">sdsd</div> -->
-  		<div class="bg-red-200 inline-block w-20">sd</div>
-  		<!-- <div class="bg-red-200 inline">sdsd</div>
- 		 <div class="bg-red-200 inline">sds</div> -->
-	</div>
-
-image - h-64 w-full 
-	object-cover, 
-	object-center (remvoe distrotatoin and always in center)
-	inset-0 h-full w-full (take full image space + object-cover + object-center)
---------------------------------------------------------------------------
-
-Make center: 
- 	1. (mx-auto max-w-md) -: makeing center and middle 
- 	2. (absolute): mx-auto, my-auto, change with top, left, right
- 	3. flex: flex items-center justify-center, h-16
-
-	max-w-md mx-auto(margin-left/right)  : Making center
-
-	breakpoints
-	// sm:mx-auto sm:w-4/5 - make center also try (max-w-md max-auto)
-
-	container+mx-auto+: making at the center of the screen
-	<div class="container mx-auto bg-orange-300  px-4">
-  		<div>continer</div>
-	</div>
-	or 
-	theam :{  
-  		constiner:{ 
-    			center:true, padding:'2rem'
-	}}
-
-	Text center(important)
-	-	 text-center, tracking-wide
-
-
+```
+```
+  <div class="">
+	<h3>Use of Inline Block to make in collumn</h3>
+	<div class="bg-red-200 block h-23">sdsds</div>
+	<!-- <div class="bg-red-200 inline h-23 w-23">sdsd</div> -->
+	<div class="bg-red-200 inline-block w-20">sd</div>
+	<!-- <div class="bg-red-200 inline">sdsd</div>
+	 <div class="bg-red-200 inline">sds</div> -->
+  </div>
+```
 
 --------------------------------Responsive Design-----------------------------------------
 https://www.youtube.com/watch?v=Ff_n_QClipQ (Responsive)
@@ -209,68 +196,72 @@ MAKING RESPONSICE ON MAIN DIV (modify on each line to check the status)
 	| hidden 	|      sm:flex    |  :mobile(hide), large page(show)		|
 	| hidden  	|      sm:inline  |  br,  line break in large screen 
 	  flex	|	       flex-row/flex-col
-	-------------------------------------------------------------------- ------------      
 
 
---------------------------------Remove Folder Commad Line-----------------------------------------
-Remove your .next folder: 
-	rm -rf .next &&  yarn build
-
---------------------------------Position-----------------------------------------
-
-1. absolute, relative- 
-		top-60, left, zindex-10 
-
-------------------------------***************--FLEX--***************---------------------------------------
-
-flex- 
-	display, flex-direction\flex-wrap, flex-grow, order, shrink
+####-Remove Folder Command Line
+##### Remove your .next folder: 
+```
+ - 	rm -rf .next &&  yarn build
+```
+####-Position
+##### 1. absolute, relative- 
+```
+ - 		top-60, left, zindex-10 
+```
+HR
+## flex- 
+ - display, flex-direction\flex-wrap, flex-grow, order, shrink
   
- Continer
+###  Continer
+```
  -------------
  Item1 Item2 Item3
  -------------
 
- flex and flex-row				div1 	div2 	div3
-normal/flex col
+ - flex and flex-row				div1 	div2 	div3
+ - normal/flex col
 		div1
 		div2
 		div3
-Full page height  - min-h-screen
+```
+
+### Full page height  - min-h-screen
 
 CONTAINER --->>>
-
+```
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CSS                                              			           Tailwind CSS
-
-flex						 			                                      flex     				-keep in same 1 line, also with [flex-row]
-flex-direction: row/column			                            flex-row/flex-col                   - sameline[flex-row], virticle[flex-cols]
-flex-wrap: wrap					 			    wrap
-justify-content:flex-start|flex-end|center
-    |space-between|space-around(horizonatl)                 			justify-start   /end/center/between/around/evenly     [Center : justify-center & items-center]
-align-items; flex-start/end/center/stretch(vertical)			  items-start  (+flex)   /end/center/baseline(vimp)/stretch(default) (height reqired)
-align-contect: center/flex-start/end					              content-center (no flex+ worked in child also when height given)  
-                                                                      /start/end/between/around/evenly {only works when flex-wrap}
-                                                                      (height and also space between the element)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+flex						 	|     flex               -keep in same 1 line, also with [flex-row]						
+flex-direction: row/column			   	|     flex-row/flex-col  - sameline[flex-row], virticle[flex-cols]
+flex-wrap: wrap					 	|     wrap
+justify-content:flex-start|flex-end|center 		|
+    |space-between|space-around(horizonatl)        	|     justify-start      - /end/center/between/around/evenly     [Center : justify-center & items-center]
+align-items; flex-start/end/center/stretch(vertical) 	|     items-start  (+flex)   /end/center/baseline(vimp)/stretch(default) (height reqired)
+align-contect: center/flex-start/end		 	|     Content-center (no flex+ worked in child also when height given)  
+                                                	|           /start/end/between/around/evenly {only works when flex-wrap}
+                                                  	|           (height and also space between the element)
 										                                        
-CHILD --->>>
-align-self:auto/ flex-start/end/center/stretch					    self-auto/start/end/center/stretch - this only work on the main child div (EXAMPLE 1000)
-                                                            content-center - work on the content under the above div (EXAMPLE 1000)
-                                                             end of the child in child, work in chil and parent when height given
-                                                            place-content-around (making center)i.e. the align-content and justify-content properties
+CHILD --->>> 						|
+align-self:auto/ flex-start/end/center/stretch	 	|    self-auto/start/end/center/stretch - this only work on the main child div (EXAMPLE 1000)
+                                                 	|    content-center - work on the content under the above div (EXAMPLE 1000)
+                                                  	|    end of the child in child, work in chil and parent when height given
+                                                  	|    place-content-around (making center)i.e. the align-content and justify-content properties
 
-											https://play.tailwindcss.com/GH2OQhJ6Nz
-											https://play.tailwindcss.com/52BbQGhs0K
-
+						 	|   https://play.tailwindcss.com/GH2OQhJ6Nz
+						 	|   https://play.tailwindcss.com/52BbQGhs0K
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 MAKING THE CENTER WHEN THERE IS HEIGH - items-center
+```
 
-
-CHILD ELEMENT
+### CHILD ELEMENT
+```
    -> basis 	      - SAME SIZE CARD LIKE GRID basis-full or basis-1/2 (50%), basis-1/4(25%) to all same size
    -> flex-grow     - (***imp***) It will take extra space, help tp grow, flex-grow-0(restrcit from growwing) 
    -> flex-shrink   - flex item to shrink if necessary, flex-shrink-0(restrcit from shrinking)
    -> flex-auto     - (***imp***)this will take the extra space, allows a flex item to grow and shrink automatically based on the available space in the container
    -> flex-1        - similar to flex-auto, share item with equal space, grow and shrink together, equal width to 3 div
-   -> flex-initial  - help flex item to shrink, but not grow(if you don't want size of item to grow) ex: flex-initial w-92m, sets a flex item to its initial size, neither allowing it to grow nor shrink. 
+   -> flex-initial  - help flex item to shrink, but not grow(if you don't want size of item to grow) ex: flex-initial w-92m, sets a flex item to its initial size, neither allowing it 				to grow nor shrink. 
              The item will maintain its base width, regardless of the available space in the container.
    -> flex-none     - nor will grow or shrink
 
@@ -295,7 +286,10 @@ EXAMPLE 1000
     <div>THIS ID DEIV</div>
   </div>
 </div>
->>>Making center
+```
+
+#### >>>Making center
+```
 [&>*]:py-4  - making padding top and bottom 10rem
 [&>*]:text-center - making the text center
 
@@ -304,24 +298,18 @@ EXAMPLE 1000
   <div class="basis-1/3 bg-purple-500">B</div>
   <div class="basis-1/3 bg-sky-500">C</div>
 </div>
+```
 
-
-Example:
+#### Example:
 https://kombai.com/tailwind/tailwind-flex-usage-and-best-practices/
 https://www.youtube.com/watch?v=X6FIydgCzzY
 
-.float-right 
+#### .float-right 
   - float an element to the right of its container example in case of image and text content.
 
-Home
-About
-Data Catalogue
-Requests
-Products
-Help
 
 --------------------------------GRID-----------------------------------------
-flex vs grid
+### flex vs grid
   - when we want to have flexiblae layout, we use flex, when we want to have fixed layout, we use grid
   - grid layout is like table layout, flex is like row layout
   - flex is for 1D layout, grid is for 2D layout
@@ -336,9 +324,8 @@ flex vs grid
   - flex is for small screen, grid is for large screen
   - flex is for mobile, grid is for desktop
 
-
-
-grid
+## grid
+```
 grid-cols-3 - "grid grid-cols-4" 
 	space at the 1 col - col-span-2 col-start-2
 grid-rows-4 - ex - "grid grid-rows-3 grid-flow-col"(3 rows), 4rows and 4 cols(grid-rows-4, grid-cols-4)
@@ -369,12 +356,13 @@ mobile 			small			large
 grid-cols-1	     sm:grid-cols-2	lg:grid-cols-3
 			
 https://www.geeksforgeeks.org/tailwind-css-grid-template-columns/?ref=lbp
-
+```
 
 
 
 --------------------------------Responsive-----------------------------------------
-making like button
+## making like button
+```
 <div>
   <a href=# class='inline-block px-2 py-4 bg-grey-200 shadow-lg text-white uppercase tracking-wider font-semibold'> Book </a> - 
  these are inline element, so can't add padding to it, therefore, add inline-block to make block element to add padding
@@ -792,6 +780,7 @@ how to make center/flex/grid/col-span, mx-auto
 <div class="min-w-2 bg-orange-500">THIS IS THE STORY</div>
 
 <div class="min-w-40 min-h-16 bg-green-400">
+```
   This element has a minimum width of 10rem and a minimum height of 4rem.
 Course Links
 
