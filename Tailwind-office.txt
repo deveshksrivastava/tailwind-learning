@@ -17,7 +17,7 @@ Border/background/underline
 	rounded	rounded-sm, lg
 	shadow	shadow[xl, 2xl]
 	opacity	bg-opecity-5
-		
+```		
 text		
 	Font Size:	text-xs (extra small), text-sm (small), text-base (base size), text-lg (large), text-xl (extra large), and so on, to set the font size.
 	Font Weight(bold):	font-thin, font-light, font-normal, font-medium, font-semibold, font-bold, and font-extrabold adjust the font weight for different
@@ -35,6 +35,7 @@ Text color (text-*): hover:text-green-500
 Opacity (opacity-*): bg-red-400/40,  hover:opacity-75 (75% opacity on hover)
 Border (border-*): hover:border-dashed (dashed border on hover)
 Shadow (shadow-*): hover:shadow-md (medium shadow on hover)"
+```
 		"<h1 class=""text-3xl font-bold text-center mb-4"">This is a heading</h1>
 <p class=""text-gray-700 text-base leading-loose"">This is some paragraph text.</p>
 <span class=""text-red-500 underline uppercase tracking-wide"">Important Text</span>"
